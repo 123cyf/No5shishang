@@ -1,0 +1,211 @@
+#wrapper {
+    margin: 0 auto;
+    width: 980px;
+    height: auto;
+    .gray_border_box{
+        border: 1px solid #C6E6F3;
+        margin-top: 10px;
+        padding: 10px;
+        text-align: left;
+        width: 958px;
+        float: left;
+        .log-reg-box{
+            text-align:left;
+            height: 453px;
+            width: 455px;
+            float: left;
+            margin-top: 40px;
+            padding: 0 10px;
+            border-right:1px solid #ccc;
+            .log-tit {
+                height: 43px;
+                width: 439px;
+                // font-size:16px;
+                // color:#ccc;
+                // background:#ccc;
+                // text-align:center;
+                background-image: url(/images/reg-bg.png);
+                background-repeat: no-repeat;
+                background-position: -162px -153px;
+                margin-bottom: 37px;
+            }
+            
+            #frmUserLogin {
+                margin: 0px;
+                .input {
+                    height: 55px;
+                    margin-left: 50px;
+                    font-size: 12px;
+                    .width60 {
+                        width: 60px;
+                        height: 25px;
+                        line-height: 23px;
+                        text-align: right;
+                        float: left;
+                        margin-right:10px;
+                    }
+                    .fixlogininput {
+                        font-family: Verdana, Geneva, Arial, Helvetica,                     sans-serif;
+                        width: 200px;
+                        padding: 2px;
+                        border: 1px solid #7f9db9;
+                    }
+                    a:link {
+                        color: #00B6F2;
+                        text-decoration: none;
+                    }
+                    .reg_errmsg {
+                        color: #ff0000;
+                    }
+                    .tip {
+                        height: 25px;
+                        font-size: 12px;
+                        line-height: 25px;
+                        padding-left: 65px;
+                        *padding-left: 0;
+                        position: relative;
+                        color: #515151;
+                        font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+                        white-space: normal;
+                    }
+                    .testcode {
+                        font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+                        border: 1px solid #7f9db9;
+                        padding: 2px;
+                        width: 50px;
+                    }
+                    #login-btn {
+                        height: 29px;
+                        width: 190px;
+                        float: left;
+                        margin-left: 132px;
+                        display: inline;
+                        /*background:url("../images/btn-login.png") no-repeat;*/
+                        #login_loading {
+                            /*display:none;*/
+                            visibility: hidden;
+                            white-space: normal;
+                             img {
+                                position: relative;
+                                top: 3px;
+                            }
+                        }
+                    }
+
+
+                }
+            }
+        }
+        .ver-line {
+            background-image: url(../images/login_bd.png);
+            background-repeat: no-repeat;
+            height: 403px;
+            width: 1px;
+            float: left;
+            background-position: -928px -83px;
+        }
+        .log-reg-box{
+            /* 注册部分css样式*/
+            text-align: left;
+            height: 453px;
+            width: 455px;
+            float: left;
+            margin-top: 40px;
+            padding: 0 10px;
+            .log-tit{
+                height: 43px;
+                width: 439px;
+                /*background-image: url(/images/reg-bg.png);*/
+                background-repeat: no-repeat;
+                background-position: -162px -153px;
+                margin-bottom: 37px;
+            }
+            #frmUserRegister{
+                margin: 0px;
+                .input{
+                    height: 55px;
+                    margin-left: 50px;
+                    font-size: 12px;
+                    .width60{
+                        width: 60px;
+                        height: 25px;
+                        line-height: 23px;
+                        text-align: right;
+                        float: left;
+                        margin-right:10px;
+                    }
+                    .fixlogininput{
+                            font-family: Verdana, Geneva, Arial, Helvetica,                     sans-serif;
+                            width: 200px;
+                            padding: 2px;
+                            border: 1px solid #7f9db9; 
+                    }
+                    .img_right{
+                        display:none;
+                    }
+                    .tip{
+                        height: 25px;
+                        font-size: 12px;
+                        line-height: 25px;
+                        padding-left: 65px;
+                        *padding-left: 0;
+                        position: relative;
+                        color: #515151;
+                        font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+                        white-space: normal;
+                    }
+                    #verifycode-box {
+                        height: 20px;
+                        width: 180px;
+                        float: left;
+                        .width60 {
+                            width: 60px;
+                            height: 25px;
+                            line-height: 23px;
+                            text-align: right;
+                            float: left;
+                        }
+                        .testcode {
+                            font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+                            border: 1px solid #7f9db9;
+                            padding: 2px;
+                            width: 50px;
+                        }
+                        .img_right {
+                            margin-left: 3px;
+                            display: none;
+                        }
+                        img {
+                            vertical-align: top;
+                            border: 0 none;
+                        }
+                        .tip {
+                            height: 25px;
+                            font-size: 12px;
+                            line-height: 25px;
+                            padding-left: 65px;
+                            *padding-left: 0;
+                            position: relative;
+                            color: #515151;
+                            font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+                            white-space: normal;
+                        }
+                    }
+                }
+                #reg-btn{
+                    margin-left:150px;
+                    .loadingproc{
+                        visibility: hidden;
+                        white-space: normal;
+                            img {
+                            position:relative;
+                            top: 3px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}

@@ -1,0 +1,113 @@
+#wrapper {
+    margin: 0 auto;
+    width: 980px;
+    height: auto;
+}
+#wrapper .gray_border_box {
+    border: 1px solid #C6E6F3;
+    margin-top: 10px;
+    padding: 10px;
+    text-align: left;
+    width: 958px;
+    float: left;
+}
+#wrapper .gray_border_box .log-reg-box {
+  /* 娉ㄥ唽閮ㄥ垎css鏍峰紡*/
+  text-align: left;
+  height: 453px;
+  width: 455px;
+  float: left;
+  margin-top: 40px;
+  padding: 0 10px;
+}
+#wrapper .gray_border_box .log-reg-box .log-tit {
+  height: 43px;
+  width: 439px;
+  background-repeat: no-repeat;
+  background-position: -162px -153px;
+  margin-bottom: 37px;
+}
+#wrapper .gray_border_box .log-reg-box #frmUserRegister {
+  margin: 0px;
+}
+#wrapper .gray_border_box .log-reg-box #frmUserRegister .input {
+  height: 55px;
+  margin-left: 50px;
+  font-size: 12px;
+}
+#wrapper .gray_border_box .log-reg-box #frmUserRegister .input .width60 {
+  width: 60px;
+  height: 25px;
+  line-height: 23px;
+  text-align: right;
+  float: left;
+  margin-right: 10px;
+}
+#wrapper .gray_border_box .log-reg-box #frmUserRegister .input .fixlogininput {
+  font-family: Verdana, Geneva, Arial, Helvetica,                     sans-serif;
+  width: 200px;
+  padding: 2px;
+  border: 1px solid #7f9db9;
+}
+#wrapper .gray_border_box .log-reg-box #frmUserRegister .input .img_right {
+  display: none;
+}
+#wrapper .gray_border_box .log-reg-box #frmUserRegister .input .tip {
+  height: 25px;
+  font-size: 12px;
+  line-height: 25px;
+  padding-left: 65px;
+  *padding-left: 0;
+  position: relative;
+  color: #515151;
+  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+  white-space: normal;
+}
+#wrapper .gray_border_box .log-reg-box #frmUserRegister .input #verifycode-box {
+  height: 20px;
+  width: 180px;
+  float: left;
+}
+#wrapper .gray_border_box .log-reg-box #frmUserRegister .input #verifycode-box .width60 {
+  width: 60px;
+  height: 25px;
+  line-height: 23px;
+  text-align: right;
+  float: left;
+}
+#wrapper .gray_border_box .log-reg-box #frmUserRegister .input #verifycode-box .testcode {
+  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+  border: 1px solid #7f9db9;
+  padding: 2px;
+  width: 50px;
+}
+#wrapper .gray_border_box .log-reg-box #frmUserRegister .input #verifycode-box .img_right {
+  margin-left: 3px;
+  display: none;
+}
+#wrapper .gray_border_box .log-reg-box #frmUserRegister .input #verifycode-box img {
+  vertical-align: top;
+  border: 0 none;
+}
+#wrapper .gray_border_box .log-reg-box #frmUserRegister .input #verifycode-box .tip {
+  height: 25px;
+  font-size: 12px;
+  line-height: 25px;
+  padding-left: 65px;
+  *padding-left: 0;
+  position: relative;
+  color: #515151;
+  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+  white-space: normal;
+}
+#wrapper .gray_border_box .log-reg-box #frmUserRegister #reg-btn {
+  margin-left: 150px;
+}
+#wrapper .gray_border_box .log-reg-box #frmUserRegister #reg-btn .loadingproc {
+  visibility: hidden;
+  white-space: normal;
+}
+#wrapper .gray_border_box .log-reg-box #frmUserRegister #reg-btn .loadingproc img {
+  position: relative;
+  top: 3px;
+}

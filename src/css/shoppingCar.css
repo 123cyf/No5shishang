@@ -1,0 +1,102 @@
+.header{
+    height:63px;
+    width:950px;
+}
+.header h2{
+    float:left;
+    /*text-indent:-9999;*/
+}
+.header .ul_right{
+    float:right;
+    width:400px;
+    height:30px;
+    vertical-align: middle;
+    margin-top:20px;
+}
+.header .ul_right li{
+    float:left;
+    /*width:75px;*/
+    border-right:1px solid #ccc;
+    margin-right:10px;
+    padding-right:10px;
+}
+.header .ul_right .liw{
+    width:122px;
+}
+.header .ul_right li a{
+    display:inline-block;
+    text-decoration:none;
+    font-size:14px;
+    height:14px;
+    line-height:14px;
+    color:#ccc; 
+}
+.car_top{
+    width:950px;
+    height:35px;
+    background:skyblue;
+}
+.car_top .ul_head li{
+    float:left;
+    margin-right:69px;
+    height:35px;
+    line-height:35px;
+    color:#333333;
+    font-size:12px;
+}
+.car_top .goods{
+    width:950px;
+    height:35px;
+    border:1px solid black;
+}
+/*.car_top .goods .goods_info{
+    border:1px solid black;
+    border-top:none;
+}*/
+.car_top .goods .goods_info li{
+    float:left;
+    height:35px;
+    line-height:35px;
+    font-size:12px;
+    margin-right:14px;
+    width:90px;
+
+}
+.car_top .goods .goods_info li .num{
+    text-align:center;
+    border:1px solid #ccc;
+    width:30px;
+}
+.car_top .goods p{
+    float:right;
+    padding-left:760px;
+    width:950px;
+    background:pink;
+    margin-bottom:20px;
+}
+.act{
+    width:950px;
+    margin-top:30px;
+}
+.act #wenben{
+    border:1px solid #ccc;
+    width:150px;
+    height:20px;
+    margin-right:10px;
+    margin-left:5px;
+}
+.act .act_r{
+    float:right;
+}
+.act .act_r span{
+    background:skyblue;
+}
+.car_bottom{
+    margin-top:30px;
+    height:300px;
+    width:950px;
+}
+.car_bottom img{
+    width:100%;
+    height:100%;
+}

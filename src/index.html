@@ -1,0 +1,3186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script type="text/javascript" src="lib/jquery-1.10.1.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/base.css" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <script type="text/javascript" src= "js/common.js"></script>
+        <!-- <link rel="stylesheet" type="text/css" href="js/index.js" /> -->
+        <script type="text/javascript" src="js/index.js"></script>
+    </head>
+    <body>
+    <!-- 头部的结构 -->
+        <div id="head-info">
+            <div class="head-info con">
+                <ul class = "head-welcome">
+                    <li>
+                        <span class= "userInfo"></span>
+                        欢迎您！
+                        <span class="xianshi">
+                            <a class ="lo" href="html/login.html">[登录]</a>
+                            <a class="re" href="html/login.html">[免费注册]</a>
+                        </span>
+                        <input type="button" class="exit" value = "退出" />
+                    </li>
+                </ul>
+                <ul class = "user-control">
+                    <li class="ding"><span>我的账户</span><span>|</span>
+                        <ul class="dingdan" style="display:none">
+                            <li style="height:20px;"><a href="html/shoppingCar.html">我的订单</a></li>
+                            <li style="height:20px;"><a style="color:red;" href="#">我的积分</a></li>
+                            <li style="height:20px;"><a style="color:red;" href="#">我的优惠</a></li>
+                            <li style="height:20px;"><a style="color:red;" href="#">我的收藏</a></li>
+                        </ul>
+                    </li>
+                    <li><span>收藏本站</span><span>|</span></li>
+                    <li><span>帮助中心</span></li>
+                    <li><span  class = "header_c">222-11111</span></li>
+                </ul>
+            </div>
+        </div>
+        <!-- headBox -->
+        <div id="headbox">
+            <div class="headbox con">
+                <div class="logo">
+                    <a href=""><img src="images/headbox_logo.png"  alt="" /></a>
+                </div>
+                <div class="searchbox">
+                    <div class ="search_box">
+                        <input type="text" class="search"value="护手霜"/>
+                        <input type="button" class ="btn" value = "搜索" />
+                    </div>
+                    <p>热门搜索：
+                        <a href="#">保湿</a>
+                        <a href="#">防敏感专用</a>
+                        <a href="#">雅诗兰黛</a>
+                        <a href="#">气垫BB</a>
+                        <a href="#">护手霜</a>
+                        <a href="#">专柜小样</a>
+                        <a href="#">口红</a>
+                    </p>
+                </div>
+                <!-- 鼠标移动到二维码处显示另外一个 -->
+               <!--  <ul class="mobile-menu">
+                    <li class="ewm1"><img src="images/2wm.jpg" alt="" /></li>
+                    <li class = "ewm2">
+                        <p>
+                           <img src="images/2wm.jpg"  alt="" />
+                        </p>
+                        <p>
+                            <img src="images/2wm.jpg"  alt="" />
+                        </p>
+                    </li>
+                </ul> -->
+                <div class="shoppingcart">
+                    <div class="trigger" style="cursor: pointer;">
+                        购物车
+                        <strong class="numAllText" style="color:red;">0</strong>
+                        件      
+                    </div>
+                    <div class="shoppingList">
+                        <!-- 购物车中还没有商品赶紧选购吧 -->
+                        <div class="goodslist" >
+                           <!--  <dl>
+                                <dt>
+                                   <img src="images/caizhuang2.jpg" alt="" />   
+                                </dt>
+                                <dd class="pro-name">商品名称</dd>
+                                <dd class="pro-price">
+                                    "商品价格￥52*1"
+                                    <a href="#">删除</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>
+                                   <img src="images/caizhuang2.jpg" alt="" />   
+                                </dt>
+                                <dd class="pro-name">商品名称</dd>
+                                <dd class="pro-price">
+                                    "商品价格￥52*1"
+                                    <a href="#">删除</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>
+                                   <img src="images/caizhuang2.jpg" alt="" />   
+                                </dt>
+                                <dd class="pro-name">商品名称</dd>
+                                <dd class="pro-price">
+                                    "商品价格￥52*1"
+                                    <a href="#">删除</a>
+                                </dd>
+                            </dl> -->
+                        </div>  
+                        <div class="sum">
+                            <p>
+                                共
+                                <b class="numAllText1" style="color:red;">0</b>
+                                件商品  金额总计:￥
+                                <em class="ToltalPrice">0</em>
+                            </p>
+                            <a href="html/shoppingCar.html" >去购物车结算</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- 导航栏 -->
+    <div id="mainnav" class>
+        <div class="mainnav con">
+            <h2 class="mainnav_left">
+                <p>全部商品品类</p>
+                <ul class = "nav_left2
+                ">
+                    <li>
+                        <h2><a href="#">面部护理</a><span>&gt;</span></h2>
+                        <!-- 二级导航 -->
+                        <div class="nav_2">
+                            <a href="html/list.html">洗面奶</a>
+                            <a href="html/list.html">爽肤水</a>
+                            <a href="html/list.html">乳液</a>
+                            <a href="html/list.html">防晒</a>
+                            <a href="html/list.html">面膜</a>
+                            <a href="html/list.html">精华</a>
+                            <a href="html/list.html">眼霜</a>
+                            <a href="html/list.html">面霜</a>
+                            <a href="html/list.html">喷雾</a>
+                        </div>
+                        <!-- 三级导航 -->
+                        <div class = "nav_left3">
+                            <div class="nav_left3_L">
+                                <p>
+                                    <span>卸妆步骤</span>
+                                    <a href="html/list.html">卸妆油</a>
+                                    <a href="html/list.html">卸妆油</a>
+                                    <a href="html/list.html">卸妆油</a>
+                                    <a href="html/list.html">卸妆油</a>
+                                    <a href="html/list.html">卸妆油</a>
+                                    <a href="html/list.html">卸妆油</a>
+                                </p>
+                                <p>
+                                    <span>卸妆步骤</span>
+                                    <a href="html/list.html">卸妆油</a>
+                                    <a href="html/list.html">卸妆油</a>
+                                    <a href="html/list.html">卸妆油</a>
+                                    <a href="html/list.html">卸妆油</a>
+                                    <a href="html/list.html">卸妆油</a>
+                                    <a href="html/list.html">卸妆油</a>
+                                </p>
+                                <p>
+                                    <span>卸妆步骤</span>
+                                    <a href="html/list.html">卸妆油</a>
+                                    <a href="html/list.html">卸妆油</a>
+                                    <a href="html/list.html">卸妆油</a>
+                                    <a href="html/list.html">卸妆油</a>
+                                    <a href="html/list.html">卸妆油</a>
+                                    <a href="html/list.html">卸妆油</a>
+                                </p>
+                                <p>
+                                    <span>卸妆步骤</span>
+                                    <a href="html/list.html">卸妆油</a>
+                                    <a href="html/list.html">卸妆油</a>
+                                    <a href="html/list.html">卸妆油</a>
+                                    <a href="html/list.html">卸妆油</a>
+                                    <a href="html/list.html">卸妆油</a>
+                                    <a href="html/list.html">卸妆油</a>
+                                </p>
+                                <p>
+                                    <span>卸妆步骤</span>
+                                    <a href="html/list.html">卸妆油</a>
+                                    <a href="html/list.html">卸妆油</a>
+                                    <a href="html/list.html">卸妆油</a>
+                                    <a href="html/list.html">卸妆油</a>
+                                    <a href="html/list.html">卸妆油</a>
+                                    <a href="html/list.html">卸妆油</a>
+                                </p>
+                                <p>
+                                    <span>卸妆步骤</span>
+                                    <a href="html/list.html">卸妆油</a>
+                                    <a href="html/list.html">卸妆油</a>
+                                    <a href="html/list.html">卸妆油</a>
+                                    <a href="html/list.html">卸妆油</a>
+                                    <a href="html/list.html">卸妆油</a>
+                                    <a href="html/list.html">卸妆油</a>
+                                </p>
+                                <p>
+                                    <span>卸妆步骤</span>
+                                    <a href="html/list.html">卸妆油</a>
+                                    <a href="html/list.html">卸妆油</a>
+                                    <a href="html/list.html">卸妆油</a>
+                                    <a href="html/list.html">卸妆油</a>
+                                    <a href="html/list.html">卸妆油</a>
+                                    <a href="html/list.html">卸妆油</a>
+                                </p>
+                                <p>
+                                    <span>卸妆步骤</span>
+                                    <a href="html/list.html">卸妆油</a>
+                                    <a href="html/list.html">卸妆油</a>
+                                    <a href="html/list.html">卸妆油</a>
+                                    <a href="html/list.html">卸妆油</a>
+                                    <a href="html/list.html">卸妆油</a>
+                                    <a href="html/list.html">卸妆油</a>
+                                </p>
+                                <p>
+                                    <span>卸妆步骤</span>
+                                    <a href="html/list.html">卸妆油</a>
+                                    <a href="html/list.html">卸妆油</a>
+                                    <a href="html/list.html">卸妆油</a>
+                                    <a href="html/list.html">卸妆油</a>
+                                    <a href="html/list.html">卸妆油</a>
+                                    <a href="html/list.html">卸妆油</a>
+                                </p>
+                            </div>
+                            <div class="nav_left3_r">
+                                <p>推荐品牌</p>
+                                <ul class="u1">
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                </ul>
+                                <ul class="u2">
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                </ul>
+                                <div><img src="images/obq.jpg" alt="" /></div>
+                            </div>
+                            <!-- 三级导航 -->
+                        </div>
+                    </li>
+                    <li>
+                        <h2><a href="#">面部护理</a><span>&gt;</span></h2>
+                        <!-- 二级导航 -->
+                        <div class="nav_2">
+                            <a href="#">洗面奶</a>
+                            <a href="#">爽肤水</a>
+                            <a href="#">乳液</a>
+                            <a href="#">防晒</a>
+                            <a href="#">面膜</a>
+                            <a href="#">精华</a>
+                            <a href="#">眼霜</a>
+                            <a href="#">面霜</a>
+                            <a href="#">喷雾</a>
+                        </div>
+                        <!-- 三级导航 -->
+                        <div class = "nav_left3">
+                            <div class="nav_left3_L">
+                                <p>
+                                    <span>卸妆步骤</span>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                </p>
+                                <p>
+                                    <span>卸妆步骤</span>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                </p>
+                                <p>
+                                    <span>卸妆步骤</span>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                </p>
+                                <p>
+                                    <span>卸妆步骤</span>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                </p>
+                                <p>
+                                    <span>卸妆步骤</span>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                </p>
+                                <p>
+                                    <span>卸妆步骤</span>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                </p>
+                                <p>
+                                    <span>卸妆步骤</span>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                </p>
+                                <p>
+                                    <span>卸妆步骤</span>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                </p>
+                                <p>
+                                    <span>卸妆步骤</span>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                </p>
+                                <p>
+                                    <span>卸妆步骤</span>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                </p>
+                                <p>
+                                    <span>卸妆步骤</span>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                </p>
+                                <p>
+                                    <span>卸妆步骤</span>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                </p>
+                            </div>
+                            <div class="nav_left3_r">
+                                <p>推荐品牌</p>
+                                <ul class="u1">
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                </ul>
+                                <ul class="u2">
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                </ul>
+                                <div><img src="images/obq.jpg" alt="" /></div>
+                            </div>
+                            <!-- 三级导航 -->
+                        </div>
+                    </li>
+
+                    <li>
+                        <h2><a href="#">面部护理</a><span>&gt;</span></h2>
+                        <!-- 二级导航 -->
+                        <div class="nav_2">
+                            <a href="#">洗面奶</a>
+                            <a href="#">爽肤水</a>
+                            <a href="#">乳液</a>
+                            <a href="#">防晒</a>
+                            <a href="#">面膜</a>
+                            <a href="#">精华</a>
+                            <a href="#">眼霜</a>
+                            <a href="#">面霜</a>
+                            <a href="#">喷雾</a>
+                        </div>
+                        <!-- 三级导航 -->
+                        <div class = "nav_left3">
+                            <div class="nav_left3_L">
+                                 
+                                <p>
+                                    <span>卸妆步骤</span>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                </p>
+                                <p>
+                                    <span>卸妆步骤</span>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                </p>
+                                <p>
+                                    <span>卸妆步骤</span>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                </p>
+                                <p>
+                                    <span>卸妆步骤</span>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                </p>
+                                <p>
+                                    <span>卸妆步骤</span>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                </p>
+                                <p>
+                                    <span>卸妆步骤</span>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                </p>
+                                <p>
+                                    <span>卸妆步骤</span>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                </p>
+                                <p>
+                                    <span>卸妆步骤</span>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                </p>
+                                <p>
+                                    <span>卸妆步骤</span>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                </p>
+                            </div>
+                            <div class="nav_left3_r">
+                                <p>推荐品牌</p>
+                                <ul class="u1">
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                </ul>
+                                <ul class="u2">
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                </ul>
+                                <div><img src="images/obq.jpg" alt="" /></div>
+                            </div>
+                            <!-- 三级导航 -->
+                        </div>
+                    </li>
+
+                    <li>
+                        <h2><a href="#">面部护理</a><span>&gt;</span></h2>
+                        <!-- 二级导航 -->
+                        <div class="nav_2">
+                            <a href="#">洗面奶</a>
+                            <a href="#">爽肤水</a>
+                            <a href="#">乳液</a>
+                            <a href="#">防晒</a>
+                            <a href="#">面膜</a>
+                            <a href="#">精华</a>
+                            <a href="#">眼霜</a>
+                            <a href="#">面霜</a>
+                            <a href="#">喷雾</a>
+                        </div>
+                        <!-- 三级导航 -->
+                        <div class = "nav_left3">
+                            <div class="nav_left3_L">
+                                <p>
+                                    <span>卸妆步骤</span>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                </p>
+                                <p>
+                                    <span>卸妆步骤</span>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                </p>
+                                <p>
+                                    <span>卸妆步骤</span>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                </p>
+                                <p>
+                                    <span>卸妆步骤</span>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                </p>
+                                <p>
+                                    <span>卸妆步骤</span>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                </p>
+                                <p>
+                                    <span>卸妆步骤</span>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                </p>
+                                <p>
+                                    <span>卸妆步骤</span>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                </p>
+                                <p>
+                                    <span>卸妆步骤</span>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                </p>
+                                <p>
+                                    <span>卸妆步骤</span>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                </p>
+                                
+                            </div>
+                            <div class="nav_left3_r">
+                                <p>推荐品牌</p>
+                                <ul class="u1">
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                </ul>
+                                <ul class="u2">
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                </ul>
+                                <div><img src="images/obq.jpg" alt="" /></div>
+                            </div>
+                            <!-- 三级导航 -->
+                        </div>
+                    </li>
+                            
+                    <li>
+                        <h2><a href="#">面部护理</a><span>&gt;</span></h2>
+                        <!-- 二级导航 -->
+                        <div class="nav_2">
+                            <a href="#">洗面奶</a>
+                            <a href="#">爽肤水</a>
+                            <a href="#">乳液</a>
+                            <a href="#">防晒</a>
+                            <a href="#">面膜</a>
+                            <a href="#">精华</a>
+                            <a href="#">眼霜</a>
+                            <a href="#">面霜</a>
+                            <a href="#">喷雾</a>
+                        </div>
+                        <!-- 三级导航 -->
+                        <div class = "nav_left3">
+                            <div class="nav_left3_L">
+                                <p>
+                                    <span>卸妆步骤</span>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                </p>
+                                <p>
+                                    <span>卸妆步骤</span>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                </p>
+                                <p>
+                                    <span>卸妆步骤</span>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                </p>
+                                <p>
+                                    <span>卸妆步骤</span>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                </p>
+                                <p>
+                                    <span>卸妆步骤</span>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                </p>
+                                <p>
+                                    <span>卸妆步骤</span>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                </p>
+                                <p>
+                                    <span>卸妆步骤</span>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                </p>
+                                <p>
+                                    <span>卸妆步骤</span>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                </p>
+                                <p>
+                                    <span>卸妆步骤</span>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                </p>
+                            </div>
+                            <div class="nav_left3_r">
+                                <p>推荐品牌</p>
+                                <ul class="u1">
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                </ul>
+                                <ul class="u2">
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                </ul>
+                                <div><img src="images/obq.jpg" alt="" /></div>
+                            </div>
+                            <!-- 三级导航 -->
+                        </div>
+                    </li>
+                    <li>
+                        <h2><a href="#">面部护理</a><span>&gt;</span></h2>
+                        <!-- 二级导航 -->
+                        <div class="nav_2">
+                            <a href="#">洗面奶</a>
+                            <a href="#">爽肤水</a>
+                            <a href="#">乳液</a>
+                            <a href="#">防晒</a>
+                            <a href="#">面膜</a>
+                            <a href="#">精华</a>
+                            <a href="#">眼霜</a>
+                            <a href="#">面霜</a>
+                            <a href="#">喷雾</a>
+                        </div>
+                        <!-- 三级导航 -->
+                        <div class = "nav_left3">
+                            <div class="nav_left3_L">
+                                <p>
+                                    <span>卸妆步骤</span>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                </p>
+                                <p>
+                                    <span>卸妆步骤</span>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                </p>
+                                <p>
+                                    <span>卸妆步骤</span>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                </p>
+                                <p>
+                                    <span>卸妆步骤</span>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                </p>
+                                <p>
+                                    <span>卸妆步骤</span>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                </p>
+                                <p>
+                                    <span>卸妆步骤</span>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                </p>
+                                <p>
+                                    <span>卸妆步骤</span>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                </p>
+                                <p>
+                                    <span>卸妆步骤</span>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                </p>
+                                <p>
+                                    <span>卸妆步骤</span>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                </p>
+                            </div>
+                            <div class="nav_left3_r">
+                                <p>推荐品牌</p>
+                                <ul class="u1">
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                </ul>
+                                <ul class="u2">
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                </ul>
+                                <div><img src="images/obq.jpg" alt="" /></div>
+                            </div>
+                            <!-- 三级导航 -->
+                        </div>
+                    </li>
+                    <li>
+                        <h2><a href="#">面部护理</a><span>&gt;</span></h2>
+                        <!-- 二级导航 -->
+                        <div class="nav_2">
+                            <a href="#">洗面奶</a>
+                            <a href="#">爽肤水</a>
+                            <a href="#">乳液</a>
+                            <a href="#">防晒</a>
+                            <a href="#">面膜</a>
+                            <a href="#">精华</a>
+                            <a href="#">眼霜</a>
+                            <a href="#">面霜</a>
+                            <a href="#">喷雾</a>
+                        </div>
+                        <!-- 三级导航 -->
+                        <div class = "nav_left3">
+                            <div class="nav_left3_L">
+                                <p>
+                                    <span>卸妆步骤</span>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                </p>
+                                <p>
+                                    <span>卸妆步骤</span>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                </p>
+                                <p>
+                                    <span>卸妆步骤</span>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                </p>
+                                <p>
+                                    <span>卸妆步骤</span>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                </p>
+                                <p>
+                                    <span>卸妆步骤</span>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                </p>
+                                <p>
+                                    <span>卸妆步骤</span>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                </p>
+                                <p>
+                                    <span>卸妆步骤</span>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                </p>
+                                <p>
+                                    <span>卸妆步骤</span>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                </p>
+                                <p>
+                                    <span>卸妆步骤</span>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                    <a href="#">卸妆油</a>
+                                </p>
+                            </div>
+                            <div class="nav_left3_r">
+                                <p>推荐品牌</p>
+                                <ul class="u1">
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                </ul>
+                                <ul class="u2">
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                        <li><a href="#">倩碧</a></li>
+                                </ul>
+                                <div><img src="images/obq.jpg" alt="" /></div>
+                            </div>
+                            <!-- 三级导航 -->
+                        </div>
+                    </li>
+                </ul>
+            </h2>
+            <ul class="mainnav_right">
+                <li><span><a href="#">超值小样</a></span></li>
+                <li><span><a href="#">超值小样</a></span></li>
+                <li><span><a href="#">超值小样</a></span></li>
+                <li><span><a href="#">超值小样</a></span></li>
+                <li><span><a href="#">超值小样</a></span></li>
+                <li><span><a href="#" style="color:#B5183A">超值小样</a></span></li>
+                <li><span><a href="#" style="color:#B5183A">超值小样</a></span></li>
+                <li><span style="background:none"><a href="#" >超值小样</a></span></li>
+            </ul>
+        </div>
+    </div>
+    <div id="banner">
+        <div class="banner con">
+            <div class="banner_L">
+            <!-- 放图片 -->
+                <div class="imglist">
+                    <ul>
+                        <li><img src="images/lunbo_1.jpg" alt="" /></li>
+                        <li><img src="images/lunbo_2.jpg" alt="" /></li>
+                        <li><img src="images/lunbo_1.jpg" alt="" /></li>
+                        <li><img src="images/lunbo_2.jpg" alt="" /></li>
+                        <li><img src="images/lunbo_1.jpg" alt="" /></li>
+                    </ul>
+                </div>
+                <!-- 焦点图 -->
+               <p class="light">
+                <!--<span class="active">1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>5</span>
+                <span>6</span>-->
+            </p>
+            </div>
+            <div class="banner_r">
+                <!-- 放图片 -->
+                <!-- <a href="#"><img width="200" height="390"src="images/lunbo1_1.jpg" alt="" /></a> -->
+                <a href="#"><img src="images/lunbo1_1.jpg" alt="" /></a>
+                <a href="#"><img src="images/lunbo1_1.jpg" alt="" /></a>
+                <a href="#"><img src="images/lunbo1_1.jpg" alt="" /></a>
+
+                <!-- <div class="imglist1">
+                    <ul>
+                        <li><img src="images/lunbo1_1.jpg" alt="" /></li>
+                        <li><img src="images/lunbo1_2.jpg" alt="" /></li>
+                        <li><img src="images/lunbo1_1.jpg" alt="" /></li>
+                        
+                    </ul>
+                </div> -->
+                <!-- 焦点图 -->
+            </div>
+        </div>
+    </div>
+    <!-- 轮播图下边的消息提示栏 -->
+    <div id="notice-box">
+        <div class="notice-box">
+            <ul>
+                <li>
+                    <span></span>
+                    <a href="#">情人节就送口红，你的女神肯定喜欢！！</a>
+                </li>
+            </ul>
+            <!-- <ul>
+                <li>
+                    <span></span>
+                    <a href="#">情人节就送口红，你的女神肯定喜欢！！</a>
+                </li>
+            </ul> -->
+        </div>
+    </div>
+    <div id="image_box1">
+        <div class="image_box1">
+            <a href="#"><img src="images/image_box1.jpg" alt="" /></a>
+            <a href="#"><img src="images/image_box2.jpg" alt="" /></a>
+            <a href="#"><img src="images/image_box1.jpg" alt="" /></a>
+        </div>
+    </div>  
+    <!-- 限时抢购板块 -->
+    <div id="qianggou">
+        <div class="qianggou con">
+            <h2>
+                <img src="images/qiang.jpg" alt="" />
+            </h2>
+            <a href="#" class = "goodbox">
+                <div class="time-end">
+                    剩余
+                    <b>
+                        <strong class="hour"></strong>
+                    </b>
+                    小时
+                    <b>
+                        <strong class="min"></strong>
+                    </b>
+                    分
+                    <b>
+                        <strong class="sec"></strong>
+                    </b>
+                    秒
+                </div>
+                <img src="images/qianggou1.jpg" class ="bimg" alt="" />
+                <p class="pro-name">Shiseido资生堂盼丽风姿抗皱滋润健肤水150ml，抗老健肤 恢复肌肤弹力盈润感</p>
+                <div class="pricebg">
+                    ￥
+                    <span>360.00</span>
+                </div>
+                <p class="infonum">
+                    <strong>569</strong>
+                    人已经购买
+                </p>
+            </a>
+            <a href="#" class = "goodbox">
+                <div class="time-end">
+                    剩余
+                    <b>
+                        <strong class="hour"></strong>
+                    </b>
+                    小时
+                    <b>
+                        <strong class="min"></strong>
+                    </b>
+                    分
+                    <b>
+                        <strong class="sec"></strong>
+                    </b>
+                    秒
+                </div>
+                <img src="images/qianggou1.jpg" class ="bimg" alt="" />
+                <p class="pro-name">Shiseido资生堂盼丽风姿抗皱滋润健肤水150ml，抗老健肤 恢复肌肤弹力盈润感</p>
+                <div class="pricebg">
+                    ￥
+                    <span>360.00</span>
+                </div>
+                <p class="infonum">
+                    <strong>569</strong>
+                    人已经购买
+                </p>
+            </a>
+            <a href="#" class = "goodbox">
+                <div class="time-end">
+                    剩余
+                    <b>
+                        <strong class="hour"></strong>
+                    </b>
+                    小时
+                    <b>
+                        <strong class="min"></strong>
+                    </b>
+                    分
+                    <b>
+                        <strong class="sec"></strong>
+                    </b>
+                    秒
+                </div>
+                <img src="images/qianggou1.jpg" class ="bimg" alt="" />
+                <p class="pro-name">Shiseido资生堂盼丽风姿抗皱滋润健肤水150ml，抗老健肤 恢复肌肤弹力盈润感</p>
+                <div class="pricebg">
+                    ￥
+                    <span>360.00</span>
+                </div>
+                <p class="infonum">
+                    <strong>569</strong>
+                    人已经购买
+                </p>
+            </a>
+            <a href="#" class = "goodbox">
+                <div class="time-end">
+                    剩余
+                    <b>
+                        <strong class="hour"></strong>
+                    </b>
+                    小时
+                    <b>
+                        <strong class="min"></strong>
+                    </b>
+                    分
+                    <b>
+                        <strong class="sec"></strong>
+                    </b>
+                    秒
+                </div>
+                <img src="images/qianggou1.jpg" class ="bimg" alt="" />
+                <p class="pro-name">Shiseido资生堂盼丽风姿抗皱滋润健肤水150ml，抗老健肤 恢复肌肤弹力盈润感</p>
+                <div class="pricebg">
+                    ￥
+                    <span>360.00</span>
+                </div>
+                <p class="infonum">
+                    <strong>569</strong>
+                    人已经购买
+                </p>
+            </a>
+        </div>
+    </div>
+
+    <!-- 选项卡 -->
+    <div id="sale">
+        <div class="sale con">
+            <div class="saletabs">
+                <div class="tab_arrow" style = "left: 0px; width: 235px;">
+                    <b></b>
+                </div>
+                <ul>
+                    <li>本周特价</li>
+                    <li>明星推荐</li>
+                    <li>新品上架</li>
+                    <li>热评商品</li>
+                    <li style="background:none;">超值小样</li>
+                </ul>
+            </div>
+            <div class="salebox con">
+                <div id="con_two_1">
+                    <div class="salesbox-1"> 
+                        <dl>
+                            <dt>
+                                <a href="#"><img src="images/tab1.jpg" alt="" /></a>
+                            </dt>
+                            <dd class="good_name">
+                                <a href="#">香奈儿</a><br /><a href="#">   全新凝脂恒久粉底液SPF35 PA+++(020#) 30ml</a>
+                            </dd>
+                            <dd class="good-exce">
+                                <a href="#">水润养肤 轻薄裸妆</a>
+                            </dd>
+                            <dd class="good-price">
+                            ￥
+                                <span class="good-price-cur" style="font-size:18px;">
+                                335
+                                    <span >.00</span>
+                                </span>
+                                <span class="zhekou">(5.7折)</span>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="salesbox-2">
+                        <div class="salebox-2-l">
+                            <dl>
+                                <dt>
+                                    <a href="#"><img src="images/tab2.jpg" alt="" /></a>
+                                </dt>
+                                <dd class="good-name oneline ">
+                                    <a href="#">韩国CHOKCHOK初出网红鹅蛋护手霜60ml</a>
+                                </dd>
+                                <dd class="good-price">
+                                        ￥
+                                    <span class="good-price-cur" style="font-size:18px;">
+                                        335
+                                        <span style="font-size:14px;">.00</span>
+                                    </span>
+                                    <span class="zhekou" style="font-size:14px;">(5.7折)</span>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="salebox-2-r">
+                            <dl>
+                                <dd class="good-name oneline">
+                                    <a href="#">资生堂红色蜜露精华化妆液125ml</a>
+                                </dd>
+                                <dd class="good-price">
+                                        ￥
+                                    <span class="good-price-cur" style="font-size:18px;">
+                                        335
+                                        <span style="font-size:14px;">.00</span>
+                                    </span>
+                                    <span class="zhekou" style="font-size:14px;">(5.7折)</span>
+                                </dd>
+                                
+                                <dt >
+                                    <a href="#"><img src="images/tab1.jpg" alt="" /></a>
+                                </dt>
+                            </dl>
+                        </div>
+                        <div class="salebox-2-d">
+                            <dl>
+                                <dt style="width:220px;">
+                                    <a href="#"><img width="180px" height="180px" title="新透白美肌亮润色控霜SPF35 PA+++(绿色) 30ml" alt="新透白美肌亮润色控霜SPF35 PA+++(绿色) 30ml" src="images/tab3.jpg" alt="" /></a>
+                                </dt>
+                                <dd class="good-name">
+                                    <a href="#">Shiseido资生堂</a><br />
+                                    <a href="#">新透白美肌亮润色控霜SPF35 PA+++(绿色) 30ml</a>
+                                </dd>
+                                <dd class="good-exce">
+                                    <a href="#">调整肤色，修饰肤色不匀</a>
+                                </dd>
+                                <dd class="good-price">
+                                       ￥
+                                    <span class="good-price-cur" style="font-size:18px;">
+                                        335
+                                        <span style="font-size:14px;">.00</span>
+                                    </span>
+                                    <span class="zhekou" style="font-size:14px;">(5.7折)</span>
+                                </dd>
+                            </dl>
+                        </div>
+
+                    </div>
+                    <div class="salesbox-3">
+                        <dl>
+                            <dd class="good-name">
+                                <a href="#">Biotherm碧欧泉</a><br />
+                                <a href="#">男士净肤细致爽肤水200ml</a>
+                            </dd >
+                            <dd class="good-exce">
+                                <a href="#">控油止汗，收细毛孔</a>
+                            </dd>
+                            <dd class="good-price">
+                                  ￥
+                                    <span class="good-price-cur" style="font-size:18px;">
+                                        335
+                                        <span style="font-size:14px;">.00</span>
+                                    </span>
+                                    <span class="zhekou" style="font-size:14px;">(5.7折)</span>
+                            </dd>
+                            <dt>
+                                <a href="#"><img width="230px" height="230px" title="男士净肤细致爽肤水200ml" alt="男士净肤细致爽肤水200ml" src="images/tab4.jpg" /></a>
+                            </dt>
+                        </dl>
+                    </div>
+                    <div class="salesbox-4">
+                        <dl class="s-4-t">
+                            <dt>
+                                <a href="#"><img src="images/tab1.jpg" width="150px" height="150px" title="韩国dmt素颜滴精华液5ml*10瓶" alt="韩国dmt素颜滴精华液5ml*10瓶"  /></a>
+                            </dt>
+                            <dd class="good-name oneline">
+                                <a href="#">韩国dmt素颜滴精华液5ml*10瓶</a>
+                            </dd>
+                            <dd class="good-price">
+                                ￥
+                                    <span class="good-price-cur" style="font-size:18px;">
+                                        335
+                                        <span style="font-size:14px;">.00</span>
+                                    </span>
+                                    <span class="zhekou" style="font-size:14px;">(5.7折)</span>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <a href="#"><img src="images/tab3.jpg" width="150px" height="150px" title="韩国dmt素颜滴精华液5ml*10瓶" alt="韩国dmt素颜滴精华液5ml*10瓶"  /></a>
+                            </dt>
+                            <dd class="good-name oneline">
+                                <a href="#" style="color:#ccc;font-size:12px;">韩国dmt素颜滴精华液5ml*10瓶</a>
+                            </dd>
+                            <dd class="good-price" style="color:#ff1a3a">
+                                ￥
+                                    <span class="good-price-cur" style="font-size:18px;">
+                                        335
+                                        <span style="font-size:14px;">.00</span>
+                                    </span>
+                                    <span class="zhekou" style="font-size:14px;">(5.7折)</span>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <div id="con_two_2">
+                    <img src="images/tab_img1.png" alt="" />
+                </div>
+                <div id="con_two_3">
+                    <img src="images/tab_img2.png" alt="" />
+                </div>
+                <div id="con_two_4">
+                    <dl>
+                        <dt><a href="#"><img width="180px" height="180px" title="JAYJUN 三部曲水光面膜10片"src="images/tab7.jpg" alt="JAYJUN 三部曲水光面膜10片" /></a></dt>
+                        <dd class="pro-name">
+                            <a href="#">JAYJUN 三部曲水光面膜10片</a>       
+                        </dd>
+                        <dd class="neir firstneir">
+                            <span>为什么</span>
+                            非常棒的面膜，补水保湿，脸很舒服，满意
+                        </dd>
+                        <dd class="neir">
+                            <span>孤单雨滴</span>
+                            很好用哦，现在天天用了，皮肤越来越好了。
+                        </dd>
+                        <dd class="neir">
+                            <span>合力1028</span>
+                            超喜欢这个面膜带给皮肤的感受，水水嫩嫩的，鼻子都亮起来了，还会继续光顾
+                        </dd>
+                    </dl>
+
+                    <dl>
+                        <dt><a href="#"><img width="180px" height="180px" title="JAYJUN 三部曲水光面膜10片"src="images/tab7.jpg" alt="JAYJUN 三部曲水光面膜10片" /></a></dt>
+                        <dd class="pro-name">
+                            <a href="#">JAYJUN 三部曲水光面膜10片</a>       
+                        </dd>
+                        <dd class="neir firstneir">
+                            <span>为什么</span>
+                            非常棒的面膜，补水保湿，脸很舒服，满意
+                        </dd>
+                        <dd class="neir">
+                            <span>孤单雨滴</span>
+                            很好用哦，现在天天用了，皮肤越来越好了。
+                        </dd>
+                        <dd class="neir">
+                            <span>合力1028</span>
+                            超喜欢这个面膜带给皮肤的感受，水水嫩嫩的，鼻子都亮起来了，还会继续光顾
+                        </dd>
+                    </dl>
+
+                    <dl>
+                        <dt><a href="#"><img width="180px" height="180px" title="JAYJUN 三部曲水光面膜10片"src="images/tab7.jpg" alt="JAYJUN 三部曲水光面膜10片" /></a></dt>
+                        <dd class="pro-name">
+                            <a href="#">JAYJUN 三部曲水光面膜10片</a>       
+                        </dd>
+                        <dd class="neir firstneir">
+                            <span>为什么</span>
+                            非常棒的面膜，补水保湿，脸很舒服，满意
+                        </dd>
+                        <dd class="neir">
+                            <span>孤单雨滴</span>
+                            很好用哦，现在天天用了，皮肤越来越好了。
+                        </dd>
+                        <dd class="neir">
+                            <span>合力1028</span>
+                            超喜欢这个面膜带给皮肤的感受，水水嫩嫩的，鼻子都亮起来了，还会继续光顾
+                        </dd>
+                    </dl>
+
+                    <dl>
+                        <dt><a href="#"><img width="180px" height="180px" title="JAYJUN 三部曲水光面膜10片"src="images/tab7.jpg" alt="JAYJUN 三部曲水光面膜10片" /></a></dt>
+                        <dd class="pro-name">
+                            <a href="#">JAYJUN 三部曲水光面膜10片</a>       
+                        </dd>
+                        <dd class="neir firstneir">
+                            <span>为什么</span>
+                            非常棒的面膜，补水保湿，脸很舒服，满意
+                        </dd>
+                        <dd class="neir">
+                            <span>孤单雨滴</span>
+                            很好用哦，现在天天用了，皮肤越来越好了。
+                        </dd>
+                        <dd class="neir">
+                            <span>合力1028</span>
+                            超喜欢这个面膜带给皮肤的感受，水水嫩嫩的，鼻子都亮起来了，还会继续光顾
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="#"><img width="180px" height="180px" title="JAYJUN 三部曲水光面膜10片"src="images/tab7.jpg" alt="JAYJUN 三部曲水光面膜10片" /></a></dt>
+                        <dd class="pro-name">
+                            <a href="#">JAYJUN 三部曲水光面膜10片</a>       
+                        </dd>
+                        <dd class="neir firstneir">
+                            <span>为什么</span>
+                            非常棒的面膜，补水保湿，脸很舒服，满意
+                        </dd>
+                        <dd class="neir">
+                            <span>孤单雨滴</span>
+                            很好用哦，现在天天用了，皮肤越来越好了。
+                        </dd>
+                        <dd class="neir">
+                            <span>合力1028</span>
+                            超喜欢这个面膜带给皮肤的感受，水水嫩嫩的，鼻子都亮起来了，还会继续光顾
+                        </dd>
+                    </dl>
+                </div>
+                <div id="con_two_5">
+                    <img src="images/tab_img1.png" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div id="box">
+            <p>
+                <span class="active">菜单1</span>
+                <span>菜单2</span>
+                <span>菜单3</span>
+                <span>菜单4</span>
+            </p>
+            <div id="content">
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+            </div>
+    </div> -->
+    <!-- 品牌活动 -->
+        <div id="brand-tit con">
+            <div class="brand-tit "> 
+                <div class="brand-tit-l">
+                    品牌活动
+                </div>
+                <div class="brand-tit-r">
+                    <dl>
+                        <dd><a href="#">高丝雪肌精4.3折起</a></dd>
+                        <dd><a href="#">兰蔻专场1.6折起</a></dd>
+                        <dd><a href="#">科颜氏3.3折起</a></dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+        <div class="brand-main">
+            <div class="brand-item">
+                <a href="#">
+                    <img width="236" height="300" src="images/pinpai1.jpg" alt="" />
+                </a>
+            </div>
+            <div class="brand-item">
+                <a href="#">
+                    <img width="236" height="300" src="images/pinpai2.jpg" alt="" />
+                </a>
+            </div>
+            <div class="brand-item">
+                <a href="#">
+                    <img width="236" height="300" src="images/pinpai3.jpg" alt="" />
+                </a>
+            </div>
+            <div class="brand-item">
+                <a href="#">
+                    <img width="236" height="300" src="images/pinpai4.jpg" alt="" />
+                </a>
+            </div>
+            <div class="brand-item last">
+                <a href="#">
+                    <img width="236" height="300" src="images/pinpai5.jpg" alt="" />
+                </a>
+            </div>
+        </div>
+        <!-- 护肤活动 -->
+        <div class="brand-tit hufu-tit ">
+            <div class="brand-tit-l">
+                <img src="images/hufu.jpg" alt="" />
+            </div>
+            <div class="brand-tit-r">
+                <dl>
+                    <dd><a href="#">红石榴</a></dd>
+                    <dd><a href="#">小棕瓶</a></dd>
+                    <dd><a href="#">保湿面霜</a></dd>
+                    <dd><a href="#">补水保湿</a></dd>
+                    <dd><a href="#">卸妆油</a></dd>
+                    <dd><a href="#">小黑瓶</a></dd>
+                    <dd><a href="#">倩碧三部曲</a></dd>
+                </dl>
+            </div>
+        </div> 
+        <div class="hufu-main">
+            <div class="hufu-banner">
+                <a href="#">
+                    <img width="268" height="480" src="images/hufu1.jpg" alt="" />
+                </a>
+            </div>
+            <div class="hufu-list a1">
+                <div class="hufu1">
+                <!-- <dl class="hufu-item firstdl">
+                    <dt>
+                        <a href="#">
+                            <img width="180" height="180" src="images/hufu2.jpg" alt="" />
+                        </a>
+                    </dt>
+                    <dd class="good-name">
+                                <a href="#">Biotherm碧欧泉</a><br />
+                                <a href="#">男士净肤细致爽肤水200ml</a>
+                    </dd >
+                    <dd class="good-exce">
+                        <a href="#">控油止汗，收细毛孔</a>
+                    </dd>
+                    <dd class="good-price">
+                        ￥
+                        <span class="good-price-cur" style="font-size:18px;">
+                            335
+                            <span style="font-size:14px;">.00</span>
+                        </span>
+                        <span class="zhekou" style="font-size:14px;">(5.7折)</span>
+                    </dd>
+                </dl>
+                 <dl class="hufu-item firstdl">
+                    <dt>
+                        <a href="#">
+                            <img width="180" height="180" src="images/hufu3.jpg" alt="" />
+                        </a>
+                    </dt>
+                    <dd class="good-name">
+                                <a href="#">Biotherm碧欧泉</a><br />
+                                <a href="#">男士净肤细致爽肤水200ml</a>
+                    </dd >
+                    <dd class="good-exce">
+                        <a href="#">控油止汗，收细毛孔</a>
+                    </dd>
+                    <dd class="good-price">
+                        ￥
+                        <span class="good-price-cur" style="font-size:18px;">
+                            335
+                            <span style="font-size:14px;">.00</span>
+                        </span>
+                        <span class="zhekou" style="font-size:14px;">(5.7折)</span>
+                    </dd>
+                </dl> -->
+                </div>
+                <div class="hufu2">
+                <!-- <dl class="hufu-item-d">
+                    <dd class="good-name">
+                                <a href="#">Biotherm碧欧泉</a>
+                    </dd >
+                    <dd class="good-exce">
+                        <a href="#">控油止汗，收细毛孔</a>
+                    </dd>
+                    <dd class="good-price">
+                        ￥
+                        <span class="good-price-cur" style="font-size:18px;">
+                            335
+                            <span style="font-size:14px;">.00</span>
+                        </span>
+                        <span class="zhekou" style="font-size:14px;">(5.7折)</span>
+                    </dd>
+                    <dt>
+                        <a href="#">
+                            <img width="180" height="180" src="images/hufu2.jpg" alt="" />
+                        </a>
+                    </dt>
+
+                </dl>
+                <dl class="hufu-item-d">
+                    <dd class="good-name">
+                                <a href="#">Biotherm碧欧泉</a>
+                    </dd >
+                    <dd class="good-exce">
+                        <a href="#">控油止汗，收细毛孔</a>
+                    </dd>
+                    <dd class="good-price">
+                        ￥
+                        <span class="good-price-cur" style="font-size:18px;">
+                            335
+                            <span style="font-size:14px;">.00</span>
+                        </span>
+                        <span class="zhekou" style="font-size:14px;">(5.7折)</span>
+                    </dd>
+                    <dt>
+                        <a href="#">
+                            <img width="180" height="180" src="images/hufu2.jpg" alt="" />
+                        </a>
+                    </dt>
+
+                </dl>
+                <dl class="hufu-item-d">
+                    <dd class="good-name">
+                                <a href="#">Biotherm碧欧泉</a>
+                    </dd >
+                    <dd class="good-exce">
+                        <a href="#">控油止汗，收细毛孔</a>
+                    </dd>
+                    <dd class="good-price">
+                        ￥
+                        <span class="good-price-cur" style="font-size:18px;">
+                            335
+                            <span style="font-size:14px;">.00</span>
+                        </span>
+                        <span class="zhekou" style="font-size:14px;">(5.7折)</span>
+                    </dd>
+                    <dt>
+                        <a href="#">
+                            <img width="180" height="180" src="images/hufu2.jpg" alt="" />
+                        </a>
+                    </dt>
+
+                </dl> -->
+                </div>
+            </div>
+            <div class="hufu-top">
+                <h2>护肤热销</h2>
+                <ul class="list_show">
+                    <li class="hover"> 
+                        <span class="toplist">
+                            <span class="num">1</span>
+                            雅诗兰黛净莹柔肤洁面乳
+                        </span>
+                        <div>
+                            <dl>
+                                <dt>
+                                    <a href="#">
+                                        <img width="160" height="160" src="images/hufu7.jpg" title="雅诗兰黛净莹柔肤洁面乳"
+                                        alt="雅诗兰黛净莹柔肤洁面乳" />
+                                    </a>
+                                </dt>
+                                <dd class="top-name">
+                                    <a href="#">雅诗兰黛净莹柔肤洁面乳</a>
+                                </dd>
+                                <dd class="top-price">￥35</dd>
+                            </dl>
+                        </div>
+                    </li>
+
+                    <li class="hover"> 
+                        <span class="toplist">
+                            <span class="num">2</span>
+                            雅诗兰黛净莹柔肤洁面乳
+                        </span>
+                        <div>
+                            <dl>
+                                <dt>
+                                    <a href="#">
+                                        <img width="160" height="160" src="images/hufu7.jpg" title="雅诗兰黛净莹柔肤洁面乳"
+                                        alt="雅诗兰黛净莹柔肤洁面乳" />
+                                    </a>
+                                </dt>
+                                <dd class="top-name">
+                                    <a href="#">雅诗兰黛净莹柔肤洁面乳</a>
+                                </dd>
+                                <dd class="top-price">￥35</dd>
+                            </dl>
+                        </div>
+                    </li>
+
+                    <li class="hover"> 
+                        <span class="toplist">
+                            <span class="num">3</span>
+                            雅诗兰黛净莹柔肤洁面乳
+                        </span>
+                        <div>
+                            <dl>
+                                <dt>
+                                    <a href="#">
+                                        <img width="160" height="160" src="images/hufu7.jpg" title="雅诗兰黛净莹柔肤洁面乳"
+                                        alt="雅诗兰黛净莹柔肤洁面乳" />
+                                    </a>
+                                </dt>
+                                <dd class="top-name">
+                                    <a href="#">雅诗兰黛净莹柔肤洁面乳</a>
+                                </dd>
+                                <dd class="top-price">￥35</dd>
+                            </dl>
+                        </div>
+                    </li>
+
+                    <li class="hover"> 
+                        <span class="toplist">
+                            <span class="num">4</span>
+                            雅诗兰黛净莹柔肤洁面乳
+                        </span>
+                        <div>
+                            <dl>
+                                <dt>
+                                    <a href="#">
+                                        <img width="160" height="160" src="images/hufu7.jpg" title="雅诗兰黛净莹柔肤洁面乳"
+                                        alt="雅诗兰黛净莹柔肤洁面乳" />
+                                    </a>
+                                </dt>
+                                <dd class="top-name">
+                                    <a href="#">雅诗兰黛净莹柔肤洁面乳</a>
+                                </dd>
+                                <dd class="top-price">￥35</dd>
+                            </dl>
+                        </div>
+                    </li>
+
+                    <li class="hover"> 
+                        <span class="toplist">
+                            <span class="num">5</span>
+                            雅诗兰黛净莹柔肤洁面乳
+                        </span>
+                        <div>
+                            <dl>
+                                <dt>
+                                    <a href="#">
+                                        <img width="160" height="160" src="images/hufu7.jpg" title="雅诗兰黛净莹柔肤洁面乳"
+                                        alt="雅诗兰黛净莹柔肤洁面乳" />
+                                    </a>
+                                </dt>
+                                <dd class="top-name">
+                                    <a href="#">雅诗兰黛净莹柔肤洁面乳</a>
+                                </dd>
+                                <dd class="top-price">￥35</dd>
+                            </dl>
+                        </div>
+                    </li>
+
+                    <li class="hover"> 
+                        <span class="toplist">
+                            <span class="num">6</span>
+                            雅诗兰黛净莹柔肤洁面乳
+                        </span>
+                        <div>
+                            <dl>
+                                <dt>
+                                    <a href="#">
+                                        <img width="160" height="160" src="images/hufu7.jpg" title="雅诗兰黛净莹柔肤洁面乳"
+                                        alt="雅诗兰黛净莹柔肤洁面乳" />
+                                    </a>
+                                </dt>
+                                <dd class="top-name">
+                                    <a href="#">雅诗兰黛净莹柔肤洁面乳</a>
+                                </dd>
+                                <dd class="top-price">￥35</dd>
+                            </dl>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="hufu-brand">
+                <a href="#">
+                    <img width="75" height="36" src="images/hufupinpai1.jpg" alt="" />
+                </a>
+                <a href="#">
+                    <img width="75" height="36" src="images/hufupinpai2.jpg" alt="" />
+                </a>
+                <a href="#">
+                    <img width="75" height="36" src="images/hufupinpai3.jpg" alt="" />
+                </a>
+                <a href="#">
+                    <img width="75" height="36" src="images/hufupinpai4.jpg" alt="" />
+                </a>
+                <a href="#">
+                    <img width="75" height="36" src="images/hufupinpai5.jpg" alt="" />
+                </a>
+                <a href="#">
+                    <img width="75" height="36" src="images/hufupinpai6.jpg" alt="" />
+                </a>
+                <a href="#">
+                    <img width="75" height="36" src="images/hufupinpai7.jpg" alt="" />
+                </a>
+                <a href="#">
+                    <img width="75" height="36" src="images/hufupinpai8.jpg" alt="" />
+                </a>
+                <a href="#">
+                    <img width="75" height="36" src="images/hufupinpai9.jpg" alt="" />
+                </a>
+                <a href="#">
+                    <img width="75" height="36" src="images/hufupinpai10.jpg" alt="" />
+                </a>
+                <a href="#">
+                    <img width="75" height="36" src="images/hufupinpai11.jpg" alt="" />
+                </a>
+                <a href="#">
+                    <img width="75" height="36" src="images/hufupinpai12.jpg" alt="" />
+                </a>
+            </div>
+        </div>
+        <!-- 彩妆部分 -->
+        <div class="brand-tit hufu-tit ">
+            <div class="brand-tit-l">
+                <img src="images/caizhuang.jpg" alt="" />
+            </div>
+            <div class="brand-tit-r">
+                <dl>
+                    <dd><a href="#">红石榴</a></dd>
+                    <dd><a href="#">小棕瓶</a></dd>
+                    <dd><a href="#">保湿面霜</a></dd>
+                    <dd><a href="#">补水保湿</a></dd>
+                    <dd><a href="#">卸妆油</a></dd>
+                    <dd><a href="#">小黑瓶</a></dd>
+                    <dd><a href="#">倩碧三部曲</a></dd>
+                </dl>
+            </div>
+        </div> 
+        <div class="hufu-main">
+            <div class="hufu-banner">
+                <a href="#">
+                    <img width="268" height="480" src="images/caizhuang1.jpg" alt="" />
+                </a>
+            </div>
+            <div class="hufu-list hufu-list1 b1">
+                <div class="caizhuang1">
+                <!-- <dl class="hufu-item firstdl">
+                    <dt>
+                        <a href="#">
+                            <img width="180" height="180" src="images/caizhuang2.jpg" alt="" />
+                        </a>
+                    </dt>
+                    <dd class="good-name">
+                                <a href="#">Biotherm碧欧泉</a><br />
+                                <a href="#">男士净肤细致爽肤水200ml</a>
+                    </dd >
+                    <dd class="good-exce">
+                        <a href="#">控油止汗，收细毛孔</a>
+                    </dd>
+                    <dd class="good-price">
+                        ￥
+                        <span class="good-price-cur" style="font-size:18px;">
+                            335
+                            <span style="font-size:14px;">.00</span>
+                        </span>
+                        <span class="zhekou" style="font-size:14px;">(5.7折)</span>
+                    </dd>
+                </dl>
+                 <dl class="hufu-item firstdl">
+                    <dt>
+                        <a href="#">
+                            <img width="180" height="180" src="images/caizhuang3.jpg" alt="" />
+                        </a>
+                    </dt>
+                    <dd class="good-name">
+                                <a href="#">Biotherm碧欧泉</a><br />
+                                <a href="#">男士净肤细致爽肤水200ml</a>
+                    </dd >
+                    <dd class="good-exce">
+                        <a href="#">控油止汗，收细毛孔</a>
+                    </dd>
+                    <dd class="good-price">
+                        ￥
+                        <span class="good-price-cur" style="font-size:18px;">
+                            335
+                            <span style="font-size:14px;">.00</span>
+                        </span>
+                        <span class="zhekou" style="font-size:14px;">(5.7折)</span>
+                    </dd>
+                </dl> -->
+                </div>
+                <div class="caizhuang2">
+                <!-- <dl class="hufu-item-d">
+                    <dd class="good-name">
+                                <a href="#">Biotherm碧欧泉</a>
+                    </dd >
+                    <dd class="good-exce">
+                        <a href="#">控油止汗，收细毛孔</a>
+                    </dd>
+                    <dd class="good-price">
+                        ￥
+                        <span class="good-price-cur" style="font-size:18px;">
+                            335
+                            <span style="font-size:14px;">.00</span>
+                        </span>
+                        <span class="zhekou" style="font-size:14px;">(5.7折)</span>
+                    </dd>
+                    <dt>
+                        <a href="#">
+                            <img width="180" height="180" src="images/caizhuang4.jpg" alt="" />
+                        </a>
+                    </dt>
+
+                </dl>
+                <dl class="hufu-item-d">
+                    <dd class="good-name">
+                                <a href="#">Biotherm碧欧泉</a>
+                    </dd >
+                    <dd class="good-exce">
+                        <a href="#">控油止汗，收细毛孔</a>
+                    </dd>
+                    <dd class="good-price">
+                        ￥
+                        <span class="good-price-cur" style="font-size:18px;">
+                            335
+                            <span style="font-size:14px;">.00</span>
+                        </span>
+                        <span class="zhekou" style="font-size:14px;">(5.7折)</span>
+                    </dd>
+                    <dt>
+                        <a href="#">
+                            <img width="180" height="180" src="images/caizhuang5.jpg" alt="" />
+                        </a>
+                    </dt>
+
+                </dl>
+                <dl class="hufu-item-d">
+                    <dd class="good-name">
+                                <a href="#">Biotherm碧欧泉</a>
+                    </dd >
+                    <dd class="good-exce">
+                        <a href="#">控油止汗，收细毛孔</a>
+                    </dd>
+                    <dd class="good-price">
+                        ￥
+                        <span class="good-price-cur" style="font-size:18px;">
+                            335
+                            <span style="font-size:14px;">.00</span>
+                        </span>
+                        <span class="zhekou" style="font-size:14px;">(5.7折)</span>
+                    </dd>
+                    <dt>
+                        <a href="#">
+                            <img width="180" height="180" src="images/caizhuang2.jpg" alt="" />
+                        </a>
+                    </dt>
+
+                </dl> -->
+                </div>
+            </div>
+            <div class="hufu-top">
+                <h2>护肤热销</h2>
+                <ul class="list_show">
+                    <li class="hover"> 
+                        <span class="toplist">
+                            <span class="num">1</span>
+                            雅诗兰黛净莹柔肤洁面乳
+                        </span>
+                        <div>
+                            <dl>
+                                <dt>
+                                    <a href="#">
+                                        <img width="160" height="160" src="images/caizhuang3.jpg" title="雅诗兰黛净莹柔肤洁面乳"
+                                        alt="雅诗兰黛净莹柔肤洁面乳" />
+                                    </a>
+                                </dt>
+                                <dd class="top-name">
+                                    <a href="#">雅诗兰黛净莹柔肤洁面乳</a>
+                                </dd>
+                                <dd class="top-price">￥35</dd>
+                            </dl>
+                        </div>
+                    </li>
+
+                    <li class="hover"> 
+                        <span class="toplist">
+                            <span class="num">2</span>
+                            雅诗兰黛净莹柔肤洁面乳
+                        </span>
+                        <div>
+                            <dl>
+                                <dt>
+                                    <a href="#">
+                                        <img width="160" height="160" src="images/caizhuang3.jpg" title="雅诗兰黛净莹柔肤洁面乳"
+                                        alt="雅诗兰黛净莹柔肤洁面乳" />
+                                    </a>
+                                </dt>
+                                <dd class="top-name">
+                                    <a href="#">雅诗兰黛净莹柔肤洁面乳</a>
+                                </dd>
+                                <dd class="top-price">￥35</dd>
+                            </dl>
+                        </div>
+                    </li>
+
+                    <li class="hover"> 
+                        <span class="toplist">
+                            <span class="num">3</span>
+                            雅诗兰黛净莹柔肤洁面乳
+                        </span>
+                        <div>
+                            <dl>
+                                <dt>
+                                    <a href="#">
+                                        <img width="160" height="160" src="images/caizhuang3.jpg" title="雅诗兰黛净莹柔肤洁面乳"
+                                        alt="雅诗兰黛净莹柔肤洁面乳" />
+                                    </a>
+                                </dt>
+                                <dd class="top-name">
+                                    <a href="#">雅诗兰黛净莹柔肤洁面乳</a>
+                                </dd>
+                                <dd class="top-price">￥35</dd>
+                            </dl>
+                        </div>
+                    </li>
+
+                    <li class="hover"> 
+                        <span class="toplist">
+                            <span class="num">4</span>
+                            雅诗兰黛净莹柔肤洁面乳
+                        </span>
+                        <div>
+                            <dl>
+                                <dt>
+                                    <a href="#">
+                                        <img width="160" height="160" src="images/caizhuang3.jpg" title="雅诗兰黛净莹柔肤洁面乳"
+                                        alt="雅诗兰黛净莹柔肤洁面乳" />
+                                    </a>
+                                </dt>
+                                <dd class="top-name">
+                                    <a href="#">雅诗兰黛净莹柔肤洁面乳</a>
+                                </dd>
+                                <dd class="top-price">￥35</dd>
+                            </dl>
+                        </div>
+                    </li>
+
+                    <li class="hover"> 
+                        <span class="toplist">
+                            <span class="num">5</span>
+                            雅诗兰黛净莹柔肤洁面乳
+                        </span>
+                        <div>
+                            <dl>
+                                <dt>
+                                    <a href="#">
+                                        <img width="160" height="160" src="images/caizhuang3.jpg" title="雅诗兰黛净莹柔肤洁面乳"
+                                        alt="雅诗兰黛净莹柔肤洁面乳" />
+                                    </a>
+                                </dt>
+                                <dd class="top-name">
+                                    <a href="#">雅诗兰黛净莹柔肤洁面乳</a>
+                                </dd>
+                                <dd class="top-price">￥35</dd>
+                            </dl>
+                        </div>
+                    </li>
+
+                    <li class="hover"> 
+                        <span class="toplist">
+                            <span class="num">6</span>
+                            雅诗兰黛净莹柔肤洁面乳
+                        </span>
+                        <div>
+                            <dl>
+                                <dt>
+                                    <a href="#">
+                                        <img width="160" height="160" src="images/caizhuang3.jpg" title="雅诗兰黛净莹柔肤洁面乳"
+                                        alt="雅诗兰黛净莹柔肤洁面乳" />
+                                    </a>
+                                </dt>
+                                <dd class="top-name">
+                                    <a href="#">雅诗兰黛净莹柔肤洁面乳</a>
+                                </dd>
+                                <dd class="top-price">￥35</dd>
+                            </dl>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="hufu-brand">
+                <a href="#">
+                    <img width="75" height="36" src="images/hufupinpai1.jpg" alt="" />
+                </a>
+                <a href="#">
+                    <img width="75" height="36" src="images/hufupinpai2.jpg" alt="" />
+                </a>
+                <a href="#">
+                    <img width="75" height="36" src="images/hufupinpai3.jpg" alt="" />
+                </a>
+                <a href="#">
+                    <img width="75" height="36" src="images/hufupinpai4.jpg" alt="" />
+                </a>
+                <a href="#">
+                    <img width="75" height="36" src="images/hufupinpai5.jpg" alt="" />
+                </a>
+                <a href="#">
+                    <img width="75" height="36" src="images/hufupinpai6.jpg" alt="" />
+                </a>
+                <a href="#">
+                    <img width="75" height="36" src="images/hufupinpai7.jpg" alt="" />
+                </a>
+                <a href="#">
+                    <img width="75" height="36" src="images/hufupinpai8.jpg" alt="" />
+                </a>
+                <a href="#">
+                    <img width="75" height="36" src="images/hufupinpai9.jpg" alt="" />
+                </a>
+                <a href="#">
+                    <img width="75" height="36" src="images/hufupinpai10.jpg" alt="" />
+                </a>
+                <a href="#">
+                    <img width="75" height="36" src="images/hufupinpai11.jpg" alt="" />
+                </a>
+                <a href="#">
+                    <img width="75" height="36" src="images/hufupinpai12.jpg" alt="" />
+                </a>
+            </div>
+        </div>
+        <!-- 香水活动 -->
+         <div class="brand-tit hufu-tit ">
+            <div class="brand-tit-l">
+                <img src="images/xiangs.jpg" alt="" />
+            </div>
+            <div class="brand-tit-r">
+                <dl>
+                    <dd><a href="#">Dior</a></dd>
+                    <dd><a href="#">香奈儿</a></dd>
+                    <dd><a href="#">女士香水</a></dd>
+                    <dd><a href="#">男士香水</a></dd>
+                    <dd><a href="#">套装</a></dd>
+                    <dd><a href="#">Q版</a></dd>
+                    <!-- <dd><a href="#">倩碧三部曲</a></dd> -->
+                </dl>
+            </div>
+        </div>
+        <div class="hufu-main">
+            <div class="perfume-img1">
+                <a href="#">
+                    <img src="images/xiangs1.jpg" alt="" />
+                </a>
+            </div>
+            <div class="perfumegroup">
+                <div class="perfume-img2">
+                    <a href="#">
+                        <img src="images/xiangs2.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="perfume-img3">
+                    <a href="#">
+                        <img src="images/xiangs3.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="perfume-img4">
+                     <a href="#">
+                        <img src="images/xiangs4.jpg" alt="" />
+                    </a>
+                </div>
+            </div>
+            <div class="perfume-img5">
+                 <a href="#">
+                        <img src="images/xiangs5.jpg" alt="" />
+                    </a>
+            </div>
+            <div class="hufu-top">
+                <h2>护肤热销</h2>
+                <ul class="list_show">
+                    <li class="hover"> 
+                        <span class="toplist">
+                            <span class="num">1</span>
+                            雅诗兰黛净莹柔肤洁面乳
+                        </span>
+                        <div>
+                            <dl>
+                                <dt>
+                                    <a href="#">
+                                        <img width="160" height="160" src="images/hufu7.jpg" title="雅诗兰黛净莹柔肤洁面乳"
+                                        alt="雅诗兰黛净莹柔肤洁面乳" />
+                                    </a>
+                                </dt>
+                                <dd class="top-name">
+                                    <a href="#">雅诗兰黛净莹柔肤洁面乳</a>
+                                </dd>
+                                <dd class="top-price">￥35</dd>
+                            </dl>
+                        </div>
+                    </li>
+
+                    <li class="hover"> 
+                        <span class="toplist">
+                            <span class="num">2</span>
+                            雅诗兰黛净莹柔肤洁面乳
+                        </span>
+                        <div>
+                            <dl>
+                                <dt>
+                                    <a href="#">
+                                        <img width="160" height="160" src="images/hufu7.jpg" title="雅诗兰黛净莹柔肤洁面乳"
+                                        alt="雅诗兰黛净莹柔肤洁面乳" />
+                                    </a>
+                                </dt>
+                                <dd class="top-name">
+                                    <a href="#">雅诗兰黛净莹柔肤洁面乳</a>
+                                </dd>
+                                <dd class="top-price">￥35</dd>
+                            </dl>
+                        </div>
+                    </li>
+
+                    <li class="hover"> 
+                        <span class="toplist">
+                            <span class="num">3</span>
+                            雅诗兰黛净莹柔肤洁面乳
+                        </span>
+                        <div>
+                            <dl>
+                                <dt>
+                                    <a href="#">
+                                        <img width="160" height="160" src="images/hufu7.jpg" title="雅诗兰黛净莹柔肤洁面乳"
+                                        alt="雅诗兰黛净莹柔肤洁面乳" />
+                                    </a>
+                                </dt>
+                                <dd class="top-name">
+                                    <a href="#">雅诗兰黛净莹柔肤洁面乳</a>
+                                </dd>
+                                <dd class="top-price">￥35</dd>
+                            </dl>
+                        </div>
+                    </li>
+
+                    <li class="hover"> 
+                        <span class="toplist">
+                            <span class="num">4</span>
+                            雅诗兰黛净莹柔肤洁面乳
+                        </span>
+                        <div>
+                            <dl>
+                                <dt>
+                                    <a href="#">
+                                        <img width="160" height="160" src="images/hufu7.jpg" title="雅诗兰黛净莹柔肤洁面乳"
+                                        alt="雅诗兰黛净莹柔肤洁面乳" />
+                                    </a>
+                                </dt>
+                                <dd class="top-name">
+                                    <a href="#">雅诗兰黛净莹柔肤洁面乳</a>
+                                </dd>
+                                <dd class="top-price">￥35</dd>
+                            </dl>
+                        </div>
+                    </li>
+
+                    <li class="hover"> 
+                        <span class="toplist">
+                            <span class="num">5</span>
+                            雅诗兰黛净莹柔肤洁面乳
+                        </span>
+                        <div>
+                            <dl>
+                                <dt>
+                                    <a href="#">
+                                        <img width="160" height="160" src="images/hufu7.jpg" title="雅诗兰黛净莹柔肤洁面乳"
+                                        alt="雅诗兰黛净莹柔肤洁面乳" />
+                                    </a>
+                                </dt>
+                                <dd class="top-name">
+                                    <a href="#">雅诗兰黛净莹柔肤洁面乳</a>
+                                </dd>
+                                <dd class="top-price">￥35</dd>
+                            </dl>
+                        </div>
+                    </li>
+
+                    <li class="hover"> 
+                        <span class="toplist">
+                            <span class="num">6</span>
+                            雅诗兰黛净莹柔肤洁面乳
+                        </span>
+                        <div>
+                            <dl>
+                                <dt>
+                                    <a href="#">
+                                        <img width="160" height="160" src="images/hufu7.jpg" title="雅诗兰黛净莹柔肤洁面乳"
+                                        alt="雅诗兰黛净莹柔肤洁面乳" />
+                                    </a>
+                                </dt>
+                                <dd class="top-name">
+                                    <a href="#">雅诗兰黛净莹柔肤洁面乳</a>
+                                </dd>
+                                <dd class="top-price">￥35</dd>
+                            </dl>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="hufu-brand">
+                <a href="#">
+                    <img width="75" height="36" src="images/hufupinpai1.jpg" alt="" />
+                </a>
+                <a href="#">
+                    <img width="75" height="36" src="images/hufupinpai2.jpg" alt="" />
+                </a>
+                <a href="#">
+                    <img width="75" height="36" src="images/hufupinpai3.jpg" alt="" />
+                </a>
+                <a href="#">
+                    <img width="75" height="36" src="images/hufupinpai4.jpg" alt="" />
+                </a>
+                <a href="#">
+                    <img width="75" height="36" src="images/hufupinpai5.jpg" alt="" />
+                </a>
+                <a href="#">
+                    <img width="75" height="36" src="images/hufupinpai6.jpg" alt="" />
+                </a>
+                <a href="#">
+                    <img width="75" height="36" src="images/hufupinpai7.jpg" alt="" />
+                </a>
+                <a href="#">
+                    <img width="75" height="36" src="images/hufupinpai8.jpg" alt="" />
+                </a>
+                <a href="#">
+                    <img width="75" height="36" src="images/hufupinpai9.jpg" alt="" />
+                </a>
+                <a href="#">
+                    <img width="75" height="36" src="images/hufupinpai10.jpg" alt="" />
+                </a>
+                <a href="#">
+                    <img width="75" height="36" src="images/hufupinpai11.jpg" alt="" />
+                </a>
+                <a href="#">
+                    <img width="75" height="36" src="images/hufupinpai12.jpg" alt="" />
+                </a>
+            </div>
+        </div>
+        <!-- 男士护肤 -->
+        <div class="brand-tit hufu-tit ">
+            <div class="brand-tit-l">
+                <img src="images/man.jpg" alt="" />
+            </div>
+            <div class="brand-tit-r">
+                <dl>
+                    <dd><a href="#">剃须</a></dd>
+                    <dd><a href="#">欧碧全男士</a></dd>
+                    <dd><a href="#">控油祛痘</a></dd>
+                    <dd><a href="#">洁面到</a></dd>
+                    <dd><a href="#">Zippor</a></dd>
+                    <dd><a href="#">瑞士军刀</a></dd>
+                    <!-- <dd><a href="#">倩碧三部曲</a></dd> -->
+                </dl>
+            </div>
+        </div> 
+        <div class="hufu-main">
+            <div class="men-list">
+                <!-- <dl class="men-item">
+                    <dt>
+                        <a href="#"><img src="images/man1.jpg" alt="" /></a>
+                    </dt>
+                    <dd class="good-name">
+                        <a href="#">碧欧泉男士水动力保湿乳</a>
+                    </dd>
+                    <dd class="good-price">
+                        ￥228.00
+                        <span class="zhekou">(4.8折)</span>
+                    </dd>
+                </dl>
+                <dl class="men-item">
+                    <dt>
+                        <a href="#"><img src="images/man1.jpg" alt="" /></a>
+                    </dt>
+                    <dd class="good-name">
+                        <a href="#">碧欧泉男士水动力保湿乳</a>
+                    </dd>
+                    <dd class="good-price">
+                        ￥228.00
+                        <span class="zhekou">(4.8折)</span>
+                    </dd>
+                </dl>
+                <dl class="men-item">
+                    <dt>
+                        <a href="#"><img src="images/man1.jpg" alt="" /></a>
+                    </dt>
+                    <dd class="good-name">
+                        <a href="#">碧欧泉男士水动力保湿乳</a>
+                    </dd>
+                    <dd class="good-price">
+                        ￥228.00
+                        <span class="zhekou">(4.8折)</span>
+                    </dd>
+                </dl>
+                <dl class="men-item">
+                    <dt>
+                        <a href="#"><img src="images/man1.jpg" alt="" /></a>
+                    </dt>
+                    <dd class="good-name">
+                        <a href="#">碧欧泉男士水动力保湿乳</a>
+                    </dd>
+                    <dd class="good-price">
+                        ￥228.00
+                        <span class="zhekou">(4.8折)</span>
+                    </dd>
+                </dl>
+                <dl class="men-item">
+                    <dt>
+                        <a href="#"><img src="images/man1.jpg" alt="" /></a>
+                    </dt>
+                    <dd class="good-name">
+                        <a href="#">碧欧泉男士水动力保湿乳</a>
+                    </dd>
+                    <dd class="good-price">
+                        ￥228.00
+                        <span class="zhekou">(4.8折)</span>
+                    </dd>
+                </dl>
+                <dl class="men-item">
+                    <dt>
+                        <a href="#"><img src="images/man1.jpg" alt="" /></a>
+                    </dt>
+                    <dd class="good-name">
+                        <a href="#">碧欧泉男士水动力保湿乳</a>
+                    </dd>
+                    <dd class="good-price">
+                        ￥228.00
+                        <span class="zhekou">(4.8折)</span>
+                    </dd>
+                </dl> -->
+            </div>
+            <div class="men-banner">
+                <a href="#"><img src="images/man7.jpg" alt="" /></a>
+            </div>
+            <div class="hufu-top">
+                <h2>护肤热销</h2>
+                <ul class="list_show">
+                    <li class="hover"> 
+                        <span class="toplist">
+                            <span class="num">1</span>
+                            雅诗兰黛净莹柔肤洁面乳
+                        </span>
+                        <div>
+                            <dl>
+                                <dt>
+                                    <a href="#">
+                                        <img width="160" height="160" src="images/hufu7.jpg" title="雅诗兰黛净莹柔肤洁面乳"
+                                        alt="雅诗兰黛净莹柔肤洁面乳" />
+                                    </a>
+                                </dt>
+                                <dd class="top-name">
+                                    <a href="#">雅诗兰黛净莹柔肤洁面乳</a>
+                                </dd>
+                                <dd class="top-price">￥35</dd>
+                            </dl>
+                        </div>
+                    </li>
+
+                    <li class="hover"> 
+                        <span class="toplist">
+                            <span class="num">2</span>
+                            雅诗兰黛净莹柔肤洁面乳
+                        </span>
+                        <div>
+                            <dl>
+                                <dt>
+                                    <a href="#">
+                                        <img width="160" height="160" src="images/hufu7.jpg" title="雅诗兰黛净莹柔肤洁面乳"
+                                        alt="雅诗兰黛净莹柔肤洁面乳" />
+                                    </a>
+                                </dt>
+                                <dd class="top-name">
+                                    <a href="#">雅诗兰黛净莹柔肤洁面乳</a>
+                                </dd>
+                                <dd class="top-price">￥35</dd>
+                            </dl>
+                        </div>
+                    </li>
+
+                    <li class="hover"> 
+                        <span class="toplist">
+                            <span class="num">3</span>
+                            雅诗兰黛净莹柔肤洁面乳
+                        </span>
+                        <div>
+                            <dl>
+                                <dt>
+                                    <a href="#">
+                                        <img width="160" height="160" src="images/hufu7.jpg" title="雅诗兰黛净莹柔肤洁面乳"
+                                        alt="雅诗兰黛净莹柔肤洁面乳" />
+                                    </a>
+                                </dt>
+                                <dd class="top-name">
+                                    <a href="#">雅诗兰黛净莹柔肤洁面乳</a>
+                                </dd>
+                                <dd class="top-price">￥35</dd>
+                            </dl>
+                        </div>
+                    </li>
+
+                    <li class="hover"> 
+                        <span class="toplist">
+                            <span class="num">4</span>
+                            雅诗兰黛净莹柔肤洁面乳
+                        </span>
+                        <div>
+                            <dl>
+                                <dt>
+                                    <a href="#">
+                                        <img width="160" height="160" src="images/hufu7.jpg" title="雅诗兰黛净莹柔肤洁面乳"
+                                        alt="雅诗兰黛净莹柔肤洁面乳" />
+                                    </a>
+                                </dt>
+                                <dd class="top-name">
+                                    <a href="#">雅诗兰黛净莹柔肤洁面乳</a>
+                                </dd>
+                                <dd class="top-price">￥35</dd>
+                            </dl>
+                        </div>
+                    </li>
+
+                    <li class="hover"> 
+                        <span class="toplist">
+                            <span class="num">5</span>
+                            雅诗兰黛净莹柔肤洁面乳
+                        </span>
+                        <div>
+                            <dl>
+                                <dt>
+                                    <a href="#">
+                                        <img width="160" height="160" src="images/hufu7.jpg" title="雅诗兰黛净莹柔肤洁面乳"
+                                        alt="雅诗兰黛净莹柔肤洁面乳" />
+                                    </a>
+                                </dt>
+                                <dd class="top-name">
+                                    <a href="#">雅诗兰黛净莹柔肤洁面乳</a>
+                                </dd>
+                                <dd class="top-price">￥35</dd>
+                            </dl>
+                        </div>
+                    </li>
+
+                    <li class="hover"> 
+                        <span class="toplist">
+                            <span class="num">6</span>
+                            雅诗兰黛净莹柔肤洁面乳
+                        </span>
+                        <div>
+                            <dl>
+                                <dt>
+                                    <a href="#">
+                                        <img width="160" height="160" src="images/hufu7.jpg" title="雅诗兰黛净莹柔肤洁面乳"
+                                        alt="雅诗兰黛净莹柔肤洁面乳" />
+                                    </a>
+                                </dt>
+                                <dd class="top-name">
+                                    <a href="#">雅诗兰黛净莹柔肤洁面乳</a>
+                                </dd>
+                                <dd class="top-price">￥35</dd>
+                            </dl>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="hufu-brand">
+                <a href="#">
+                    <img width="75" height="36" src="images/hufupinpai1.jpg" alt="" />
+                </a>
+                <a href="#">
+                    <img width="75" height="36" src="images/hufupinpai2.jpg" alt="" />
+                </a>
+                <a href="#">
+                    <img width="75" height="36" src="images/hufupinpai3.jpg" alt="" />
+                </a>
+                <a href="#">
+                    <img width="75" height="36" src="images/hufupinpai4.jpg" alt="" />
+                </a>
+                <a href="#">
+                    <img width="75" height="36" src="images/hufupinpai5.jpg" alt="" />
+                </a>
+                <a href="#">
+                    <img width="75" height="36" src="images/hufupinpai6.jpg" alt="" />
+                </a>
+                <a href="#">
+                    <img width="75" height="36" src="images/hufupinpai7.jpg" alt="" />
+                </a>
+                <a href="#">
+                    <img width="75" height="36" src="images/hufupinpai8.jpg" alt="" />
+                </a>
+                <a href="#">
+                    <img width="75" height="36" src="images/hufupinpai9.jpg" alt="" />
+                </a>
+                <a href="#">
+                    <img width="75" height="36" src="images/hufupinpai10.jpg" alt="" />
+                </a>
+                <a href="#">
+                    <img width="75" height="36" src="images/hufupinpai11.jpg" alt="" />
+                </a>
+                <a href="#">
+                    <img width="75" height="36" src="images/hufupinpai12.jpg" alt="" />
+                </a>
+            </div>
+        </div>
+        <!-- 美发美体部分 -->
+        <div class="brand-tit hufu-tit ">
+            <div class="brand-tit-l">
+                <img src="images/body.jpg" alt="" />
+            </div>
+            <div class="brand-tit-r">
+                <dl>
+                    <dd><a href="#">红石榴</a></dd>
+                    <dd><a href="#">小棕瓶</a></dd>
+                    <dd><a href="#">保湿面霜</a></dd>
+                    <dd><a href="#">补水保湿</a></dd>
+                    <dd><a href="#">卸妆油</a></dd>
+                    <dd><a href="#">小黑瓶</a></dd>
+                    <dd><a href="#">倩碧三部曲</a></dd>
+                </dl>
+            </div>
+        </div>
+        <div class="hufu-main">
+            <div class="men-banner">
+                <a href="#">
+                    <img src="images/meifa1.jpg" alt="" />
+                </a>
+            </div>
+            <div class="men-list men-list1">
+                    <!-- <dl class="men-item">
+                        <dt><a href="#"><img src="images/meifa2.jpg" alt="" /></a></dt>
+                        <dd class="good-name"><a href="#">爱茉莉美仙玫瑰橄榄蜂蜜精油</a></dd>
+                        <dd class="good-price">
+                            ￥223.00
+                            <span class="zhekou">(4.7折)</span>
+                        </dd>                    
+                    </dl>
+                    <dl class="men-item">
+                        <dt><a href="#"><img src="images/meifa2.jpg" alt="" /></a></dt>
+                        <dd class="good-name"><a href="#">爱茉莉美仙玫瑰橄榄蜂蜜精油</a></dd>
+                        <dd class="good-price">
+                            ￥223.00
+                            <span class="zhekou">(4.7折)</span>
+                        </dd>                    
+                    </dl>
+                
+                    <dl class="men-item lastdl">
+                    
+                        <dt><a href="#"><img src="images/meifa2.jpg" alt="" /></a></dt>
+                        <dd class="good-name"><a href="#">爱茉莉美仙玫瑰橄榄蜂蜜精油</a></dd>
+                        <dd class="good-price">
+                            ￥223.00
+                            <span class="zhekou">(4.7折)</span>
+                        </dd>                    
+                    </dl>
+                
+                <dl class="men-item bottomdl">
+                    <dt><a href="#"><img src="images/meifa2.jpg" alt="" /></a></dt>
+                        <dd class="good-name"><a href="#">爱茉莉美仙玫瑰橄榄蜂蜜精油</a></dd>
+                        <dd class="good-price">
+                            ￥223.00
+                            <span class="zhekou">(4.7折)</span>
+                        </dd>    
+                </dl>
+                <dl class="men-item bottomdl">
+                    <dt><a href="#"><img src="images/meifa2.jpg" alt="" /></a></dt>
+                        <dd class="good-name"><a href="#">爱茉莉美仙玫瑰橄榄蜂蜜精油</a></dd>
+                        <dd class="good-price">
+                            ￥223.00
+                            <span class="zhekou">(4.7折)</span>
+                        </dd>    
+                </dl>
+                <dl class="men-item lastdl bottomdl">
+                    <dt><a href="#"><img src="images/meifa2.jpg" alt="" /></a></dt>
+                        <dd class="good-name"><a href="#">爱茉莉美仙玫瑰橄榄蜂蜜精油</a></dd>
+                        <dd class="good-price">
+                            ￥223.00
+                            <span class="zhekou">(4.7折)</span>
+                        </dd>    
+                </dl> -->
+            </div>
+            <div class="hufu-top">
+                <h2>护肤热销</h2>
+                <ul class="list_show">
+                    <li class="hover"> 
+                        <span class="toplist">
+                            <span class="num">1</span>
+                            雅诗兰黛净莹柔肤洁面乳
+                        </span>
+                        <div>
+                            <dl>
+                                <dt>
+                                    <a href="#">
+                                        <img width="160" height="160" src="images/hufu7.jpg" title="雅诗兰黛净莹柔肤洁面乳"
+                                        alt="雅诗兰黛净莹柔肤洁面乳" />
+                                    </a>
+                                </dt>
+                                <dd class="top-name">
+                                    <a href="#">雅诗兰黛净莹柔肤洁面乳</a>
+                                </dd>
+                                <dd class="top-price">￥35</dd>
+                            </dl>
+                        </div>
+                    </li>
+
+                    <li class="hover"> 
+                        <span class="toplist">
+                            <span class="num">2</span>
+                            雅诗兰黛净莹柔肤洁面乳
+                        </span>
+                        <div>
+                            <dl>
+                                <dt>
+                                    <a href="#">
+                                        <img width="160" height="160" src="images/hufu7.jpg" title="雅诗兰黛净莹柔肤洁面乳"
+                                        alt="雅诗兰黛净莹柔肤洁面乳" />
+                                    </a>
+                                </dt>
+                                <dd class="top-name">
+                                    <a href="#">雅诗兰黛净莹柔肤洁面乳</a>
+                                </dd>
+                                <dd class="top-price">￥35</dd>
+                            </dl>
+                        </div>
+                    </li>
+
+                    <li class="hover"> 
+                        <span class="toplist">
+                            <span class="num">3</span>
+                            雅诗兰黛净莹柔肤洁面乳
+                        </span>
+                        <div>
+                            <dl>
+                                <dt>
+                                    <a href="#">
+                                        <img width="160" height="160" src="images/hufu7.jpg" title="雅诗兰黛净莹柔肤洁面乳"
+                                        alt="雅诗兰黛净莹柔肤洁面乳" />
+                                    </a>
+                                </dt>
+                                <dd class="top-name">
+                                    <a href="#">雅诗兰黛净莹柔肤洁面乳</a>
+                                </dd>
+                                <dd class="top-price">￥35</dd>
+                            </dl>
+                        </div>
+                    </li>
+
+                    <li class="hover"> 
+                        <span class="toplist">
+                            <span class="num">4</span>
+                            雅诗兰黛净莹柔肤洁面乳
+                        </span>
+                        <div>
+                            <dl>
+                                <dt>
+                                    <a href="#">
+                                        <img width="160" height="160" src="images/hufu7.jpg" title="雅诗兰黛净莹柔肤洁面乳"
+                                        alt="雅诗兰黛净莹柔肤洁面乳" />
+                                    </a>
+                                </dt>
+                                <dd class="top-name">
+                                    <a href="#">雅诗兰黛净莹柔肤洁面乳</a>
+                                </dd>
+                                <dd class="top-price">￥35</dd>
+                            </dl>
+                        </div>
+                    </li>
+
+                    <li class="hover"> 
+                        <span class="toplist">
+                            <span class="num">5</span>
+                            雅诗兰黛净莹柔肤洁面乳
+                        </span>
+                        <div>
+                            <dl>
+                                <dt>
+                                    <a href="#">
+                                        <img width="160" height="160" src="images/hufu7.jpg" title="雅诗兰黛净莹柔肤洁面乳"
+                                        alt="雅诗兰黛净莹柔肤洁面乳" />
+                                    </a>
+                                </dt>
+                                <dd class="top-name">
+                                    <a href="#">雅诗兰黛净莹柔肤洁面乳</a>
+                                </dd>
+                                <dd class="top-price">￥35</dd>
+                            </dl>
+                        </div>
+                    </li>
+
+                    <li class="hover"> 
+                        <span class="toplist">
+                            <span class="num">6</span>
+                            雅诗兰黛净莹柔肤洁面乳
+                        </span>
+                        <div>
+                            <dl>
+                                <dt>
+                                    <a href="#">
+                                        <img width="160" height="160" src="images/hufu7.jpg" title="雅诗兰黛净莹柔肤洁面乳"
+                                        alt="雅诗兰黛净莹柔肤洁面乳" />
+                                    </a>
+                                </dt>
+                                <dd class="top-name">
+                                    <a href="#">雅诗兰黛净莹柔肤洁面乳</a>
+                                </dd>
+                                <dd class="top-price">￥35</dd>
+                            </dl>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+             <div class="hufu-brand">
+                <a href="#">
+                    <img width="75" height="36" src="images/hufupinpai1.jpg" alt="" />
+                </a>
+                <a href="#">
+                    <img width="75" height="36" src="images/hufupinpai2.jpg" alt="" />
+                </a>
+                <a href="#">
+                    <img width="75" height="36" src="images/hufupinpai3.jpg" alt="" />
+                </a>
+                <a href="#">
+                    <img width="75" height="36" src="images/hufupinpai4.jpg" alt="" />
+                </a>
+                <a href="#">
+                    <img width="75" height="36" src="images/hufupinpai5.jpg" alt="" />
+                </a>
+                <a href="#">
+                    <img width="75" height="36" src="images/hufupinpai6.jpg" alt="" />
+                </a>
+                <a href="#">
+                    <img width="75" height="36" src="images/hufupinpai7.jpg" alt="" />
+                </a>
+                <a href="#">
+                    <img width="75" height="36" src="images/hufupinpai8.jpg" alt="" />
+                </a>
+                <a href="#">
+                    <img width="75" height="36" src="images/hufupinpai9.jpg" alt="" />
+                </a>
+                <a href="#">
+                    <img width="75" height="36" src="images/hufupinpai10.jpg" alt="" />
+                </a>
+                <a href="#">
+                    <img width="75" height="36" src="images/hufupinpai11.jpg" alt="" />
+                </a>
+                <a href="#">
+                    <img width="75" height="36" src="images/hufupinpai12.jpg" alt="" />
+                </a>
+            </div>
+        </div> 
+            <!-- 美容咨询 -->
+        <div class="beautyinfo">
+            <h2><a href="#">美容资讯</a></h2>
+            <div class="info-l">
+                <dl>
+                    <dt><a href="#"><img src="images/meirong.png" alt="" /></a></dt>
+                <dd class="title">根据场合选择防晒指数 这些新品帮你度过夏天</dd>
+                <dd class="neir">
+                    很多女生在夏天最担心的一件事就是晒黑了，而这些今年春夏新出的防晒新品
+                    <a href="#">[查看更多]</a>
+                </dd>
+                </dl>
+                
+            </div>
+            <div class="info-r">
+                <dl>
+                    <dt>
+                        <a href="#"><img src="images/meifa2.png" alt="" /></a>
+                        
+                    </dt>
+                    <dd class="title">
+                        <span>香水</span>
+                        上万种香水类型 据说只有1%的人会选
+                    </dd>
+                    <dd class="neir">
+                        性感女人的标志除了恨天高，就是香水了。常在圈里混，撞衫撞脸已不新鲜，现在最新潮的就是“撞香”。跟美女撞了，叫高逼格有品位，跟豪放大妈...
+                        <a href="#">[详细]</a>
+                    </dd>
+                </dl>
+
+                 <dl>
+                    <dt>
+                        <a href="#"><img src="images/meifa2.png" alt="" /></a>
+                        
+                    </dt>
+                    <dd class="title">
+                        <span>香水</span>
+                        上万种香水类型 据说只有1%的人会选
+                    </dd>
+                    <dd class="neir">
+                        性感女人的标志除了恨天高，就是香水了。常在圈里混，撞衫撞脸已不新鲜，现在最新潮的就是“撞香”。跟美女撞了，叫高逼格有品位，跟豪放大妈...
+                        <a href="#">[详细]</a>
+                    </dd>
+                </dl>
+
+                 <dl>
+                    <dt>
+                        <a href="#"><img src="images/meifa2.png" alt="" /></a>
+                        
+                    </dt>
+                    <dd class="title">
+                        <span>香水</span>
+                        上万种香水类型 据说只有1%的人会选
+                    </dd>
+                    <dd class="neir">
+                        性感女人的标志除了恨天高，就是香水了。常在圈里混，撞衫撞脸已不新鲜，现在最新潮的就是“撞香”。跟美女撞了，叫高逼格有品位，跟豪放大妈...
+                        <a href="#">[详细]</a>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="beautyshare">
+            <h2>编辑推荐</h2>
+            <dl class="firstdl">
+                <dt>
+                    <a href="#">
+                        <img src="images/meirong1.jpg" alt="" />
+                    </a>
+                </dt>
+                <dd class="title">
+                    <a href="#">Kiehl’s 科颜氏(契尔氏)亚马逊白泥净肤面膜(03813) 125ml</a>
+                </dd>
+                <dd class="neir">
+                    <a href="#">
+                        <span>编辑推荐：</span>
+                        标准的125ml容量~简洁明了的瓶身~跟广告上面一模一样
+                    </a>
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    <a href="#">
+                        <img src="images/meirong1.jpg" alt="" />
+                    </a>
+                </dt>
+                <dd class="title">
+                    <a href="#">Kiehl’s 科颜氏(契尔氏)亚马逊白泥净肤面膜(03813) 125ml</a>
+                </dd>
+                <dd class="neir">
+                    <a href="#">
+                        <span>编辑推荐：</span>
+                        标准的125ml容量~简洁明了的瓶身~跟广告上面一模一样
+                    </a>
+                </dd>
+                <dd></dd>
+                <dd></dd>
+            </dl>
+            <dl>
+                <dt>
+                    <a href="#">
+                        <img src="images/meirong1.jpg" alt="" />
+                    </a>
+                </dt>
+                <dd class="title">
+                    <a href="#">Kiehl’s 科颜氏(契尔氏)亚马逊白泥净肤面膜(03813) 125ml</a>
+                </dd>
+                <dd class="neir">
+                    <a href="#">
+                        <span>编辑推荐：</span>
+                        标准的125ml容量~简洁明了的瓶身~跟广告上面一模一样
+                    </a>
+                </dd>
+                <dd></dd>
+                <dd></dd>
+            </dl>
+            <dl>
+                <dt>
+                    <a href="#">
+                        <img src="images/meirong1.jpg" alt="" />
+                    </a>
+                </dt>
+                <dd class="title">
+                    <a href="#">Kiehl’s 科颜氏(契尔氏)亚马逊白泥净肤面膜(03813) 125ml</a>
+                </dd>
+                <dd class="neir">
+                    <a href="#">
+                        <span>编辑推荐：</span>
+                        标准的125ml容量~简洁明了的瓶身~跟广告上面一模一样
+                    </a>
+                </dd>
+                <dd></dd>
+                <dd></dd>
+            </dl>
+        </div>
+        <!-- 底部 -->
+        <div class="footer">
+            <div class="footer_l">
+                <div class="tel">
+                    <p class="num">010-51666655</p>
+                    <p class="time">9:00-18:00</p>
+                </div>
+                <p class="weibo">
+                    新浪官方微博
+                    <a href="#"><img src="images/guanzhu.jpg" alt="" /></a>
+                </p>
+                <p class="ding">
+                    <input type="text" value="请输入您的邮箱地址"/>
+                    <a href="#"><img src="images/ding.jpg" alt="" /></a>
+                </p>
+                <p class="ps">最新美容资讯</p>
+            </div>
+            <div class="footer_c">
+                <ul class="text">
+                    <li class="howTo"><a href="#">如何订购</a></li>
+                    <li><a href="#">网上下单</a></li>
+                    <li><a href="#">电话订购</a></li>
+                    <li><a href="#">邮寄订购</a></li>
+                    <li><a href="#">传真订购</a></li>
+                </ul>
+                <ul class="text">
+                    <li class="howTo"><a href="#">如何订购</a></li>
+                    <li><a href="#">网上下单</a></li>
+                    <li><a href="#">电话订购</a></li>
+                    <li><a href="#">邮寄订购</a></li>
+                    <li><a href="#">传真订购</a></li>
+                </ul>
+                <ul class="text">
+                    <li class="howTo"><a href="#">如何订购</a></li>
+                    <li><a href="#">网上下单</a></li>
+                    <li><a href="#">电话订购</a></li>
+                    <li><a href="#">邮寄订购</a></li>
+                    <li><a href="#">传真订购</a></li>
+                </ul>
+                <ul class="text">
+                    <li class="howTo"><a href="#">如何订购</a></li>
+                    <li><a href="#">网上下单</a></li>
+                    <li><a href="#">电话订购</a></li>
+                    <li><a href="#">邮寄订购</a></li>
+                    <li><a href="#">传真订购</a></li>
+                </ul>
+                <ul class="text">
+                    <li class="howTo"><a href="#">如何订购</a></li>
+                    <li><a href="#">网上下单</a></li>
+                    <li><a href="#">电话订购</a></li>
+                    <li><a href="#">邮寄订购</a></li>
+                    <li><a href="#">传真订购</a></li>
+                </ul>
+                <ul class="text">
+                    <li class="howTo"><a href="#">如何订购</a></li>
+                    <li><a href="#">网上下单</a></li>
+                    <li><a href="#">电话订购</a></li>
+                    <li><a href="#">邮寄订购</a></li>
+                    <li><a href="#">传真订购</a></li>
+                </ul>
+                 <ul class="text">
+                    <li><a href="#"><img src="images/2wm.jpg" alt="" /></a></li>      
+                </ul>
+            </div>
+        </div>
+        <div class="foot-bottom">
+            <ul class="fb">
+                <li>
+                    <h2><a href="#">
+                        <img src="images/sheng1.jpg" alt="" />
+                    </a></h2>
+                    <p>足不出户享受网购乐趣</p>
+                    <p>北京城区次日送达</p>
+                </li>
+            </ul>
+            <ul class="fb">
+                <li>
+                    <h2><a href="#">
+                        <img src="images/sheng1.jpg" alt="" />
+                    </a></h2>
+                    <p>足不出户享受网购乐趣</p>
+                    <p>北京城区次日送达</p>
+                </li>
+            </ul>
+            <ul class="fb">
+                <li>
+                    <h2><a href="#">
+                        <img src="images/sheng1.jpg" alt="" />
+                    </a></h2>
+                    <p>足不出户享受网购乐趣</p>
+                    <p>北京城区次日送达</p>
+                </li>
+            </ul>
+            <ul class="fb">
+                <li>
+                    <h2><a href="#">
+                        <img src="images/sheng1.jpg" alt="" />
+                    </a></h2>
+                    <p>足不出户享受网购乐趣</p>
+                    <p>北京城区次日送达</p>
+                </li>
+            </ul>
+        </div>
+        <p class="beian">Copyright @ 2001-2012 N°5.com.cn All Rights Reserved 京ICP备11045170号</p>
+    </body>
+</html>
